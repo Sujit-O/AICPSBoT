@@ -194,7 +194,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='DAC2017: Deadline Paper Submission:  November 14, 2017 ') 
     elif 'coffee' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='I am already dead awake, but i can use more coffee!') 
-    elif 'meeting' in text: 
+    elif 'meeting' in text:  
         bot.send_message(chat_id=update.message.chat_id, text='We have meeting on 26th September I think!') 
     elif 'food' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='I am always hungry for food! Where do you want to go?')
