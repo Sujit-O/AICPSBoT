@@ -185,7 +185,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Nice to meet you Haeseung! Time for some travel huh!')
     elif 'I' in text and  'mohammad' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Nice to meet you Mohammad! Time for some travel huh!')                       
-     elif 'sujit' in text and  'life' in text: 
+    elif 'sujit' in text and  'life' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='I do not think he has life! lol') 
     elif 'conference' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Upcoming conference:')                           
