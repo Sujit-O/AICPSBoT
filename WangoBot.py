@@ -201,7 +201,7 @@ def error(bot, update, error):
     logger.warn('Update "%s" caused error "%s"' % (update, error))
 
 
-def main():
+def wangomain():
     # Create the EventHandler and pass it your bot's token.
     updater = Updater("393007383:AAEtMdzXRtKNbpDfoUZ8qC2u4jjEwyUNmzc")
 #    updater = Updater("397724839:AAHA3hv9ViauAh_beIysnJcvDDHlV5wn1sY")
@@ -229,5 +229,4 @@ def main():
     updater.idle()
 
 
-if __name__ == '__main__':
-    main()
+
