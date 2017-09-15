@@ -10,6 +10,7 @@ import logging
 from emoji import emojize
 from time import gmtime, strftime, localtime
 from uuid import uuid4
+from weather import Weather
 
 
 import re
@@ -43,6 +44,8 @@ def escape_markdown(text):
 def echo(bot, update):
     text=update.message.text
     text=str.lower(text)
+    location = weather.lookup_by_location('irvine')
+    condition = location.condition()
 #    bot.send_message(chat_id=update.message.chat_id, text="I'm a bot, please talk to me!")
     if  'professor' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I think around september 26th!')
@@ -54,7 +57,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='وقد استنير نظرتك الجميلة بلدي سولد عزيزي، وهذا هو السبب في أنني أحبك إلى القمر والعودة.')
         return  
     if  'weather' in text:
-        bot.send_message(chat_id=update.message.chat_id, text='I cannot tell you weather yet!')
+        bot.send_message(chat_id=update.message.chat_id, text= condition['text'])
         return  
     if  'have' in text and 'weekend' in text:
         bot.send_message(chat_id=update.message.chat_id, text=emojize('AICPS member is supposed to spend all the time in the lab, even in the weekend! :rage:', use_aliases=True))
