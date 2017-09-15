@@ -234,7 +234,9 @@ def echo(bot, update):
     elif 'preliminary' in text and 'exam' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='find more details here http://engineering.uci.edu/dept/eecs/graduate/roadmap_phd/prelim_cpe1')            
     elif 'pick' in text and 'me' in text: 
-        bot.send_message(chat_id=update.message.chat_id, text='I would but i donot have car! sorry')                
+        bot.send_message(chat_id=update.message.chat_id, text='I would but i donot have car! sorry') 
+    elif 'spicy' in text: 
+        bot.send_message(chat_id=update.message.chat_id, text='Spicy food is the best food, although Haeseung cannot handle it!')       
     else:
         a=1;
 #        print('')
