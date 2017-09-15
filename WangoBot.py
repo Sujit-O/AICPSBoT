@@ -57,15 +57,16 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='وقد استنير نظرتك الجميلة بلدي سولد عزيزي، وهذا هو السبب في أنني أحبك إلى القمر والعودة.')
         return  
     if  'weather' in text:
-        weather = Weather()
-        location = weather.lookup_by_location('irvine')
-        condition = location.condition()
-        bot.send_message(chat_id=update.message.chat_id, text= condition['text'])
+        bot.send_message(chat_id=update.message.chat_id, text= 'I cannt forecast weather yet!')
+       # weather = Weather()
+        #location = weather.lookup_by_location('irvine')
+        #condition = location.condition()
+        #bot.send_message(chat_id=update.message.chat_id, text= condition['text'])
         return  
     if  'have' in text and 'weekend' in text:
         bot.send_message(chat_id=update.message.chat_id, text=emojize('AICPS member is supposed to spend all the time in the lab, even in the weekend! :rage:', use_aliases=True))
         return  
-    if  'goo' in text and 'back' in text:
+    if  'goo' in text:
         bot.send_message(chat_id=update.message.chat_id, text='gooooo! Pick me up please!')
         return 
     if  'okay' in text or 'kk' in text or 'good!' in text or 'thnx' in text or 'sure!' in text:
