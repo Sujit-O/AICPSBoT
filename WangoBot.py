@@ -86,6 +86,10 @@ def echo(bot, update):
         return
     if  'who' in text and 'professor' in text:
         bot.send_message(chat_id=update.message.chat_id, text=emojize(':santa:', use_aliases=True))
+        return 
+    if  'what' in text and 'doing' in text and 'you' in text:
+        bot.send_message(chat_id=update.message.chat_id, text=emojize(':horse_racing:', use_aliases=True))
+        bot.send_message(chat_id=update.message.chat_id, text='jk, just chilling, waiting for someone to talk to me.')
         return  
     if  'wango' in text and 'cool' in text:
         bot.send_message(chat_id=update.message.chat_id, text='You are cooler! I am just living in your shadows')
