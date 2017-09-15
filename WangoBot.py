@@ -122,7 +122,7 @@ def echo(bot, update):
           bot.send_message(chat_id=update.message.chat_id, text='It is too late for lunch! It is already ')
           bot.send_message(chat_id=update.message.chat_id, text=strftime("%H:%M", localtime()))
         else:
-          bot.send_message(chat_id=update.message.chat_id, text='Yes! Where do you want to go?')
+          bot.send_message(chat_id=update.message.chat_id, text='Yes! Where do you want to go for lunch?')
         return 
     if  'dinner?' in text:
         if localtime().tm_hour<18:
