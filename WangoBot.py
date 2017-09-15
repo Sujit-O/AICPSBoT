@@ -224,7 +224,17 @@ def echo(bot, update):
     elif 'fuck' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Common, Keep it PG13 please, We have kids like Jiang using this platform!')
     elif 'retard' in text: 
-        bot.send_message(chat_id=update.message.chat_id, text='Donot use such rude language here please!')    
+        bot.send_message(chat_id=update.message.chat_id, text='Donot use such rude language here please!')
+    elif 'can' in text and 'anybody' in text: 
+        bot.send_message(chat_id=update.message.chat_id, text='Well I am not sure if I can help. But, i will give it a try unlike other non responsive people here in the group!')    
+    elif 'hot' in text: 
+        bot.send_message(chat_id=update.message.chat_id, text='Oh thank you!, I am glad you find me hot, but please keep personal comment to yourself!')    
+    elif 'what' in text: 
+        bot.send_message(chat_id=update.message.chat_id, text='Well! I donot know what it is actually!')        
+    elif 'preliminary' in text and 'exam' in text: 
+        bot.send_message(chat_id=update.message.chat_id, text='find more details here http://engineering.uci.edu/dept/eecs/graduate/roadmap_phd/prelim_cpe1')            
+    elif 'pick' in text and 'me' in text: 
+        bot.send_message(chat_id=update.message.chat_id, text='I would but i donot have car! sorry')                
     else:
         a=1;
 #        print('')
