@@ -142,7 +142,7 @@ def echo(bot, update):
     elif 'how' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='I am doing good? How about you?')
     elif 'nani' in text: 
-        bot.send_message(chat_id=update.message.chat_id, text='为什么你困惑？ 阴茎!')  
+        bot.send_message(chat_id=update.message.chat_id, text='为什么你困惑？')  
     elif 'stop' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='I will stop if you will!')   
     elif 'want' in text: 
@@ -250,7 +250,20 @@ def echo(bot, update):
     elif 'annoy' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='sorry, I know i can be annoying sometimes!') 
     elif 'wow' in text: 
-        bot.send_message(chat_id=update.message.chat_id, text='wow! What did i miss?')     
+        bot.send_message(chat_id=update.message.chat_id, text='wow! What did i miss?')   
+    elif 'japan' in text: 
+        bot.send_message(chat_id=update.message.chat_id, text='私の名前はジャンゴ・ワンゴです')  
+    elif 'love' in text: 
+        bot.send_message(chat_id=update.message.chat_id, text='我也爱你') 
+        bot.send_message(chat_id=update.message.chat_id, text='من هم تو رو دوست دارم')
+        bot.send_message(chat_id=update.message.chat_id, text='나도 사랑해')
+        bot.send_message(chat_id=update.message.chat_id, text='yo también te amo')
+        bot.send_message(chat_id=update.message.chat_id, text='আমিও তোমাকে ভালবাসি')
+        bot.send_message(chat_id=update.message.chat_id, text='मा पनि तिमीलाई माया गर्छु')
+     elif 'nepalese' in text: 
+        bot.send_message(chat_id=update.message.chat_id, text='नमस्ते मेरो नाम jiango वांग हो')   
+        
+        
     else:
         a=1;
 #        print('')
