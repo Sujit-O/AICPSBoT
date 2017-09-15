@@ -7,6 +7,7 @@ Created on Wed Sep 13 15:28:13 2017
 
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import logging
+from time import gmtime, strftime
 from uuid import uuid4
 
 import re
@@ -44,6 +45,16 @@ def echo(bot, update):
     if  'professor' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I think around september 26th!')
         return
+    if  'wango' in text and 'cool' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='You are cooler! I am just living in your shadows')
+        return 
+    if  'time' in text and 'now' in text:
+        bot.send_message(chat_id=update.message.chat_id, text=strftime("%H:%M:%S +0000", gmtime()))
+        return  
+    if  'today' in text and 'date' in text:
+        bot.send_message(chat_id=update.message.chat_id, text=strftime("%a, %d %b %Y", gmtime()))
+        #strftime("%a, %d %b %Y %H:%M:%S +0000", gmtime())
+        return  
     if  'piss' in text and 'off' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I am sorry that I could not be of any help to you! sadness!')
         return 
