@@ -7,8 +7,10 @@ Created on Wed Sep 13 15:28:13 2017
 
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import logging
+from emoji import emojize
 from time import gmtime, strftime, localtime
 from uuid import uuid4
+
 
 import re
 # Enable logging
@@ -47,7 +49,10 @@ def echo(bot, update):
         return
     if  'goo' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='gooooo! Pick me up please!')
-        return  
+        return 
+    if  'okay' in text:
+        bot.send_message(chat_id=update.message.chat_id, text=emojize(':thumbsup:', use_aliases=True))
+        return   
     if  'wango' in text and 'cool' in text:
         bot.send_message(chat_id=update.message.chat_id, text='You are cooler! I am just living in your shadows')
         return 
