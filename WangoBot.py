@@ -45,6 +45,9 @@ def echo(bot, update):
     if  'professor' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I think around september 26th!')
         return
+    if  'goo' in text and 'back' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='gooooo! Pick me up please!')
+        return  
     if  'wango' in text and 'cool' in text:
         bot.send_message(chat_id=update.message.chat_id, text='You are cooler! I am just living in your shadows')
         return 
