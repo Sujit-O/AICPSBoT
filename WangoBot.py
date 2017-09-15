@@ -89,7 +89,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Did anybody mention girl?') 
     elif 'anime' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Want to watch Tokyo Train girl instead?')
-    elif 'hi!' in text: 
+    elif 'hi' in text and '!' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Hello my Friend!')  
     elif 'hungry' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Lets go to Curry Place!')  
