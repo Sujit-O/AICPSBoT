@@ -12,7 +12,10 @@ from time import gmtime, strftime, localtime
 from uuid import uuid4
 from weather import Weather
 
-
+weather = Weather()
+location = weather.lookup_by_location('california')
+condition = location.condition()
+    
 import re
 # Enable logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -44,9 +47,7 @@ def escape_markdown(text):
 def echo(bot, update):
     text=update.message.text
     text=str.lower(text)
-    weather = Weather()
-    location = weather.lookup_by_location('california')
-    condition = location.condition()
+    
 #    bot.send_message(chat_id=update.message.chat_id, text="I'm a bot, please talk to me!")
     if  'professor' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I think around september 26th!')
