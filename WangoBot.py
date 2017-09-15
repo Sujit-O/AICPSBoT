@@ -45,7 +45,7 @@ def echo(bot, update):
     text=update.message.text
     text=str.lower(text)
     weather = Weather()
-    location = weather.lookup_by_location('irvine')
+    location = weather.lookup_by_location('california')
     condition = location.condition()
 #    bot.send_message(chat_id=update.message.chat_id, text="I'm a bot, please talk to me!")
     if  'professor' in text and 'back' in text:
