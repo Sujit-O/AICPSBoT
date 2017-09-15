@@ -107,7 +107,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Money does not buy happiness!!')  
     elif 'life' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Life is short! Just Enjoy!!')  
-    elif 'wango' in text or 'hi' in text: 
+    elif 'wango' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Hi! Did you mention my name?') 
     elif 'yes' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Oh Great! How may I helpy you?') 
