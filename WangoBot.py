@@ -223,6 +223,8 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='I can be a boy for you!')
     elif 'fuck' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Common, Keep it PG13 please, We have kids like Jiang using this platform!')
+    elif 'retard' in text: 
+        bot.send_message(chat_id=update.message.chat_id, text='Donot use such rude language here please!')    
     else:
         a=1;
 #        print('')
