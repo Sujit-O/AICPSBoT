@@ -12,9 +12,7 @@ from time import gmtime, strftime, localtime
 from uuid import uuid4
 from weather import Weather
 
-weather = Weather()
-location = weather.lookup_by_location('california')
-condition = location.condition()
+
     
 import re
 # Enable logging
@@ -59,6 +57,9 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='وقد استنير نظرتك الجميلة بلدي سولد عزيزي، وهذا هو السبب في أنني أحبك إلى القمر والعودة.')
         return  
     if  'weather' in text:
+        weather = Weather()
+        location = weather.lookup_by_location('irvine')
+        condition = location.condition()
         bot.send_message(chat_id=update.message.chat_id, text= condition['text'])
         return  
     if  'have' in text and 'weekend' in text:
