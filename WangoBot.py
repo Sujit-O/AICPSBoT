@@ -110,6 +110,9 @@ def echo(bot, update):
     if  'tell' in text and 'day' in text:
         bot.send_message(chat_id=update.message.chat_id, text=strftime("%a", localtime()))
         return 
+    if  'what' in text and 'day' in text and 'today' in text:
+        bot.send_message(chat_id=update.message.chat_id, text=strftime("%a", localtime()))
+        return  
     if  'going' in text and 'home' in text:
         if localtime().tm_hour<22:
           bot.send_message(chat_id=update.message.chat_id, text='What! It is not even 10 pm and you are going home! not like an AICPS student!')
