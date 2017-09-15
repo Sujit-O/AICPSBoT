@@ -16,7 +16,7 @@ from argparse import ArgumentParser
 from xml.dom import minidom
 from urllib.request import urlopen
 from urllib.parse import urlencode
-from weather import Weather
+#from weather import Weather
 
 API_URL = "http://www.google.com/ig/api?"
     
