@@ -261,7 +261,9 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='আমিও তোমাকে ভালবাসি')
         bot.send_message(chat_id=update.message.chat_id, text='मा पनि तिमीलाई माया गर्छु')
     elif 'nepalese' in text: 
-        bot.send_message(chat_id=update.message.chat_id, text='नमस्ते मेरो नाम jiango वांग हो')   
+        bot.send_message(chat_id=update.message.chat_id, text='नमस्ते मेरो नाम jiango वांग हो')
+    elif 'poem' in text: 
+        bot.send_message(chat_id=update.message.chat_id, text='离离原上草，一岁一枯荣。野火烧不尽，春风吹又生。远芳侵古道，晴翠接荒城。又送王孙去 萋萋满别情。')    
         
         
     else:
