@@ -57,7 +57,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='I am sleepy too!')     
         bot.send_message(chat_id=update.message.chat_id, text=emojize(':zzz:', use_aliases=True))
         return
-    if  'have' in text 'i' in text and 'fun' in text:
+    if  'have' in text and 'i' in text and 'fun' in text:
         bot.send_message(chat_id=update.message.chat_id, text=emojize(' well go to the beach! :bikini:', use_aliases=True))
         return  
     if  'who' in text and 'jiang' in text:
