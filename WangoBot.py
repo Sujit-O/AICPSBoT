@@ -41,6 +41,9 @@ def echo(bot, update):
     text=update.message.text
     text=str.lower(text)
 #    bot.send_message(chat_id=update.message.chat_id, text="I'm a bot, please talk to me!")
+    if  'professor' in text and 'back':
+        bot.send_message(chat_id=update.message.chat_id, text='I think around september 26th!')
+    
     if  'jiang' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Oh I know you Jiang, you are getting big!')
         bot.send_message(chat_id=update.message.chat_id, text='Need some exercises!')
