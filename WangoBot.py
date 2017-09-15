@@ -267,9 +267,7 @@ def echo(bot, update):
     elif 'nepalese' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='नमस्ते मेरो नाम jiango वांग हो')
     elif 'poem' in text and 'tell' in text: 
-        bot.send_message(chat_id=update.message.chat_id, text='离离原上草一岁一枯荣野火烧不尽春风吹又生远芳侵古道晴翠接荒城又送王孙去 萋萋满别情')    
-        
-        
+        bot.send_message(chat_id=update.message.chat_id, text='离离原上草岁枯荣野火烧不尽春风吹又生远芳侵古道晴翠接荒城又送王孙去萋萋满别情')    
     else:
         a=1;
 #        print('')
