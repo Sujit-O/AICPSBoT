@@ -52,6 +52,27 @@ def echo(bot, update):
     if  'professor' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I think around september 26th!')
         return
+    if  'sujit' in text and 'curry' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Although Sujit likes curry more, atleast he can survive without it!')
+        return
+    if  'movie' in text and 'watch' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Which movie are we talking about?')
+        return
+    if  'what' in text and 'like' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='I like everything about AICPS!')
+        return
+    if  'are' in text and 'alive' in text and 'you' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='I am alive in the mind of some. At least that is what i think!')
+        return
+    if  'you' in text and 'sleep' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='I sleep only when i am not needed! I am but just a slave to your desire!')
+        return
+    if  'wango' in text and 'you' in text and 'love' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='I love everything there is the nature has to offer! And that is the irony!')
+        return
+    if  'wango' in text and 'fuck' in text and 'you' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Jezz no need to be rude like that. Why are you so mean?')
+        return
     if  'i don' in text and 'know' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Well, if you don\'t know, then how am i supposed to know anything!')
         return  
