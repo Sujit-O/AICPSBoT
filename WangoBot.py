@@ -60,6 +60,33 @@ def echo(bot, update):
     if  'who' in text and 'jiang' in text:
         bot.send_message(chat_id=update.message.chat_id, text=emojize(':panda_face:', use_aliases=True))
         return  
+    if  'who' in text and 'sujit' in text:
+        bot.send_message(chat_id=update.message.chat_id, text=emojize(':elephant:', use_aliases=True))
+        return 
+    if  'who' in text and 'anthony' in text:
+        bot.send_message(chat_id=update.message.chat_id, text=emojize(':racehorse:', use_aliases=True))
+        return  
+    if  'who' in text and 'sina' in text:
+        bot.send_message(chat_id=update.message.chat_id, text=emojize(':eggplant:', use_aliases=True))
+        return  
+    if  'who' in text and 'korosh' in text:
+        bot.send_message(chat_id=update.message.chat_id, text=emojize(':rabbit:', use_aliases=True))
+        return   
+    if  'who' in text and 'haeseung' in text:
+        bot.send_message(chat_id=update.message.chat_id, text=emojize(':honeybee:', use_aliases=True))
+        return  
+    if  'who' in text and 'nafiul' in text:
+        bot.send_message(chat_id=update.message.chat_id, text=emojize(':monkey:', use_aliases=True))
+        return
+    if  'who' in text and 'andrew' in text:
+        bot.send_message(chat_id=update.message.chat_id, text=emojize(':rooster:', use_aliases=True))
+        return  
+    if  'who' in text and 'ahmad' in text:
+        bot.send_message(chat_id=update.message.chat_id, text=emojize(':camel:', use_aliases=True))
+        return
+    if  'who' in text and 'professor' in text:
+        bot.send_message(chat_id=update.message.chat_id, text=emojize(':santa:', use_aliases=True))
+        return  
     if  'wango' in text and 'cool' in text:
         bot.send_message(chat_id=update.message.chat_id, text='You are cooler! I am just living in your shadows')
         bot.send_message(chat_id=update.message.chat_id, text=emojize(':heart:', use_aliases=True))
