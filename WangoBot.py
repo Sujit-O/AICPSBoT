@@ -11,14 +11,7 @@ from emoji import emojize
 from time import gmtime, strftime, localtime
 from uuid import uuid4
 
-import sys
-from argparse import ArgumentParser
-from xml.dom import minidom
-from urllib.request import urlopen
-from urllib.parse import urlencode
-#from weather import Weather
 
-API_URL = "http://www.google.com/ig/api?"
     
 import re
 # Enable logging
@@ -31,27 +24,7 @@ logger = logging.getLogger(__name__)
 # Define a few command handlers. These usually take the two arguments bot and
 # update. Error handlers also receive the raised TelegramError object in error.
 
-def weather():
-    location='irvine'
-    url = API_URL + urlencode({"weather": location})
-    xml = urlopen(url).read()
-    doc = minidom.parseString(xml)
 
-    forecast_information = doc.documentElement.getElementsByTagName("forecast_information")[0]
-    city = forecast_information.getElementsByTagName("city")[0].getAttribute("data")
-
-    current_conditions = doc.documentElement.getElementsByTagName("current_conditions")[0]
-    temp = current_conditions.getElementsByTagName("temp_c")[0].getAttribute("data")
-    condition = current_conditions.getElementsByTagName("condition")[0].getAttribute("data")
-    wind_condition = current_conditions.getElementsByTagName("wind_condition")[0].getAttribute("data")
-    humidity = current_conditions.getElementsByTagName("humidity")[0].getAttribute("data")
-
-    indent = "  "
-    update.message.reply_text("Weather for {0}:".format(city))
-    update.message.reply_text(indent + "{0}°{1}".format(temp, "C"))
-    update.message.reply_text(indent + condition)
-    update.message.reply_text(indent + wind_condition)
-    update.message.reply_text(indent + humidity)
         
 def start(bot, update):
     update.message.reply_text('Hi!')
@@ -86,8 +59,8 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='وقد استنير نظرتك الجميلة بلدي سولد عزيزي، وهذا هو السبب في أنني أحبك إلى القمر والعودة.')
         return  
     if  'weather' in text:
-        weather()
-        #bot.send_message(chat_id=update.message.chat_id, text= 'I cannt forecast weather yet!')
+        
+        bot.send_message(chat_id=update.message.chat_id, text= 'I cannt forecast weather yet!')
         # weather = Weather()
         #location = weather.lookup_by_location('irvine')
         #condition = location.condition()
