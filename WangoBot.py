@@ -53,7 +53,7 @@ def echo(bot, update):
     if  'goo' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='gooooo! Pick me up please!')
         return 
-    if  'okay' in text or 'kk' in text:
+    if  'okay' in text or 'kk' in text or 'good!' in text or 'thnx' in text or 'sure!' in text:
         bot.send_message(chat_id=update.message.chat_id, text=emojize(':thumbsup:', use_aliases=True))
         return  
     if  'sleepy' in text:
