@@ -43,7 +43,21 @@ def echo(bot, update):
 #    bot.send_message(chat_id=update.message.chat_id, text="I'm a bot, please talk to me!")
     if  'professor' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I think around september 26th!')
+        return
+    if  'piss' in text and 'off' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='I am sorry that I could not be of any help to you! sadness!')
         return 
+    if  '...' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='... ... O<B=<')
+        return  
+    if  'shut up' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Shutting up in 5')
+        bot.send_message(chat_id=update.message.chat_id, text='Shutting up in 4')
+        bot.send_message(chat_id=update.message.chat_id, text='Shutting up in 3')
+        bot.send_message(chat_id=update.message.chat_id, text='Shutting up in 2')
+        bot.send_message(chat_id=update.message.chat_id, text='Shutting up in 1')
+        bot.send_message(chat_id=update.message.chat_id, text='Going back to my sad life!')
+        return  
     if  text =='hi' or text =='hi!' or text == 'hola' or text =='hey':
         bot.send_message(chat_id=update.message.chat_id, text='Hello my best friend, I missed you so much!')
         return  
