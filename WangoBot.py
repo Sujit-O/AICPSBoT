@@ -61,6 +61,16 @@ def echo(bot, update):
         if localtime().tm_hour<22:
           bot.send_message(chat_id=update.message.chat_id, text='What! It is not even 10 pm and you are going home! not like an AICPS student!')
         return  
+    if  'lunch?':
+        if localtime().tm_hour<11:
+          bot.send_message(chat_id=update.message.chat_id, text='Too early for lunch. It is just')
+          bot.send_message(chat_id=update.message.chat_id, text=strftime("%H:%M", localtime()))
+        elif localtime().tm_hour>14: 
+          bot.send_message(chat_id=update.message.chat_id, text='It is too late for lunch! It is already ')
+          bot.send_message(chat_id=update.message.chat_id, text=strftime("%H:%M", localtime()))
+        else:
+          bot.send_message(chat_id=update.message.chat_id, text='Yes! Where do you want to go?')
+        return  
     if  'today' in text and 'date' in text:
         bot.send_message(chat_id=update.message.chat_id, text=strftime("%a, %d %b %Y", localtime()))
         #strftime("%a, %d %b %Y %H:%M:%S +0000", gmtime())
