@@ -183,7 +183,7 @@ def echo(bot, update):
     if  'joke' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Well, the only joke i know in this world is your existence! Burn!!')
         return 
-    if  'i' in text and 'ahmad' in text:
+    if  'i' in text and 'ahmed' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Hello @Ahmad, how goes life outside AICPS lab?')
         return 
     if  'hello' in text:
