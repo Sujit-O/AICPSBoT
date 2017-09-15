@@ -79,8 +79,31 @@ def echo(bot, update):
         return   
     if  'andrew' in text and 'where' in text:
         bot.send_message(chat_id=update.message.chat_id, text='He went to professor Pai chou!')
+        return 
+    if  'are' in text and 'you' in text and 'sujit' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Do you think I am so lame as sujit!')
+        return 
+    if  'are' in text and 'you' in text and 'jiang' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='hmm, well I try to be better representation of Jiang.')
+        return
+    if  'who' in text and 'in' in text and 'lab' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Currently we have 6 PhD students, one about to graduate, and 4 MS students in the lab')
         return  
-      
+    if  'you' in text and 'suck' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Well, I donot suck the way you suck some cylindrical muscles! ')
+        return  
+    if  'am' in text and 'lonely' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='No you are not, you have me Wango, your new best friend! ')
+        return
+    if  'new' in text and 'anime' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Wow, which new anime are you talking about?')
+        return  
+    if  'free' in text and 'food' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Yay! I like free foods!, lets go and ravage that place!')
+        return
+    if  'anyone' in text and 'lab' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Sadly, I am the only one in the lab lately')
+        return  
     if  'jiang' in text and 'name' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Oh I know you Jiang, you are getting big!')
         bot.send_message(chat_id=update.message.chat_id, text='Need some exercises!')
