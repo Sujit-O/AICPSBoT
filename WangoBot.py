@@ -50,11 +50,19 @@ def echo(bot, update):
     if  'goo' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='gooooo! Pick me up please!')
         return 
-    if  'okay' in text:
+    if  'okay' in text or 'kk' in text:
         bot.send_message(chat_id=update.message.chat_id, text=emojize(':thumbsup:', use_aliases=True))
-        return   
+        return  
+    if  'sleepy' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='I am sleepy too!')     
+        bot.send_message(chat_id=update.message.chat_id, text=emojize(':zzz:', use_aliases=True))
+        return  
+    if  'who' in text and 'jiang' in text:
+        bot.send_message(chat_id=update.message.chat_id, text=emojize(':panda_face:', use_aliases=True))
+        return  
     if  'wango' in text and 'cool' in text:
         bot.send_message(chat_id=update.message.chat_id, text='You are cooler! I am just living in your shadows')
+        bot.send_message(chat_id=update.message.chat_id, text=emojize(':heart:', use_aliases=True))
         return 
     if  'time' in text and 'now' in text:
         bot.send_message(chat_id=update.message.chat_id, text=strftime("%H:%M:%S", localtime()))
