@@ -89,7 +89,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Did anybody mention girl?') 
     elif 'anime' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Want to watch Tokyo Train girl instead?')
-    elif 'hi!' in text: 
+    elif 'hi ' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Hello my Friend!')  
     elif 'hungry' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Lets go to Curry Place!')  
@@ -111,7 +111,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Hi! Did you mention my name?') 
     elif 'yes' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Oh Great! How may I helpy you?') 
-    elif 'no' in text: 
+    elif 'no ' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Okay, jeez, no need to be rude!') 
     elif 'rude' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Yes you were rude!')  
@@ -151,7 +151,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Everybody should start looking for  a job!')   
     elif 'back' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Do you want me back in your life?') 
-    elif 'date' in text: 
+    elif 'date ' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Oh, date, does friday night sounds good for you?')
     elif 'north' in text and  'korea' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Did you mention north Korea! We are doomed!') 
