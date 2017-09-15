@@ -7,7 +7,7 @@ Created on Wed Sep 13 15:28:13 2017
 
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import logging
-from time import gmtime, strftime
+from time import gmtime, strftime, localtime
 from uuid import uuid4
 
 import re
@@ -49,10 +49,20 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='You are cooler! I am just living in your shadows')
         return 
     if  'time' in text and 'now' in text:
-        bot.send_message(chat_id=update.message.chat_id, text=strftime("%H:%M:%S +0000", gmtime()))
+        bot.send_message(chat_id=update.message.chat_id, text=strftime("%H:%M:%S", localtime()))
+        return  
+    if  'tell' in text and 'time' in text:
+        bot.send_message(chat_id=update.message.chat_id, text=strftime("%H:%M:%S", localtime()))
+        return  
+    if  'tell' in text and 'day' in text:
+        bot.send_message(chat_id=update.message.chat_id, text=strftime("%a", localtime()))
+        return 
+    if  'going' in text and 'home' in text:
+        
+        bot.send_message(chat_id=update.message.chat_id, text=strftime("%a", localtime()))
         return  
     if  'today' in text and 'date' in text:
-        bot.send_message(chat_id=update.message.chat_id, text=strftime("%a, %d %b %Y", gmtime()))
+        bot.send_message(chat_id=update.message.chat_id, text=strftime("%a, %d %b %Y", localtime()))
         #strftime("%a, %d %b %Y %H:%M:%S +0000", gmtime())
         return  
     if  'piss' in text and 'off' in text:
