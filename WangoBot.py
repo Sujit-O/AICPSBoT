@@ -43,7 +43,40 @@ def echo(bot, update):
 #    bot.send_message(chat_id=update.message.chat_id, text="I'm a bot, please talk to me!")
     if  'professor' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I think around september 26th!')
-        return      
+        return 
+    if  'good' in text and 'morning' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Good Morning to you too! Hope you will have an amazing day!')
+        return
+    if  'good' in text and 'night' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Sweet Dreams, Sleep tight, donot let the bed bugs bite!')
+        return  
+    if  'who' in text and 'you' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='I am Wango, your friend. How may i assist you?')
+        return 
+    if  'go' in text and 'curry' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Yay, lets go for curry, been a long time!')
+        return 
+    if  'sorry' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='you are good, no apologies required!')
+        return 
+    if  'joke' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Well, the only joke i know in this world is your existence! Burn!!')
+        return 
+    if  'i' in text and 'ahmad' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Hello @Ahmad, how goes life outside AICPS lab?')
+        return 
+    if  'hello' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Hello Darling, How may I help you?')
+        return 
+    if  'where' in text and 'advisor' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='I have not seen Professor, he is omnipresent in my opinion')
+        return 
+    if  'where' in text and 'professor' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='I have not seen Professor,But he is omnipresent in my opinion')
+        return   
+    if  'bye' in text or 'see you' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Until we meet again, take care!')
+        return   
     if  'andrew' in text and 'where' in text:
         bot.send_message(chat_id=update.message.chat_id, text='He went to professor Pai chou!')
         return  
@@ -82,10 +115,8 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Greatest Adviser in the planet!')
     elif 'mohammad' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Greatest Adviser in the planet!')
-    elif text == 'curry': 
-        bot.send_message(chat_id=update.message.chat_id, text='You are my new best friend!! Lets Gooo!!!')
     elif 'curry' in text: 
-        bot.send_message(chat_id=update.message.chat_id, text='You are my new best friend!! Lets Gooo!!!')   
+        bot.send_message(chat_id=update.message.chat_id, text='Did you just say curry! I am up for it. Want to go?')   
     elif 'like' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='I love Curry and nothing else!') 
     elif 'andrew' in text: 
