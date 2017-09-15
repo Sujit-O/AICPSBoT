@@ -209,7 +209,7 @@ def echo(bot, update):
     if  'joke' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Well, the only joke i know in this world is your existence! Burn!!')
         return 
-    if  'i' in text and 'ahmed' in text:
+    if  'i' in text and 'ahmad' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Hello @Ahmad, how goes life outside AICPS lab?')
         return 
     if  'hello' in text:
@@ -336,8 +336,12 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Go to Vegas! Yay Baby!!') 
     elif 'money' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Money does not buy happiness!!')  
-    elif 'life' in text: 
-        bot.send_message(chat_id=update.message.chat_id, text='Life is short! Just Enjoy!!')  
+    elif 'life' in text and 'sucks' in text : 
+        bot.send_message(chat_id=update.message.chat_id, text='Life is short! Just Enjoy!!') 
+    elif 'life' in text and 'hard' in text : 
+        bot.send_message(chat_id=update.message.chat_id, text='Well, not everything is meant to be as easy as your existence!')     
+    elif 'life' in text and 'mean' in text: 
+        bot.send_message(chat_id=update.message.chat_id, text='For some reason the answer is 42, but for me, eating sleeping and eating again is what life stands for!')    
     elif 'wango' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Hi! Did you mention my name?') 
     elif 'yes' in text: 
