@@ -44,7 +44,10 @@ def echo(bot, update):
     if  'professor' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I think around september 26th!')
         return      
-           
+    if  'andrew' in text and 'where' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='He went to professor Pai chou!')
+        return  
+      
     if  'jiang' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Oh I know you Jiang, you are getting big!')
         bot.send_message(chat_id=update.message.chat_id, text='Need some exercises!')
@@ -257,6 +260,8 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='wow! What did i miss?')   
     elif 'japan' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='私の名前はジャンゴ・ワンゴです')  
+    elif 'haha' in text or 'lol' in text: 
+        bot.send_message(chat_id=update.message.chat_id, text=':-)')    
     elif 'love' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='我也爱你') 
         bot.send_message(chat_id=update.message.chat_id, text='من هم تو رو دوست دارم')
@@ -268,6 +273,8 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='नमस्ते मेरो नाम jiango वांग हो')
     elif 'poem' in text and 'tell' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='离离原上草岁枯荣野火烧不尽春风吹又生远芳侵古道晴翠接荒城又送王孙去萋萋满别情')    
+    elif 'poem' in text and 'another' in text: 
+        bot.send_message(chat_id=update.message.chat_id, text='十年生死两茫茫，不思量，自难忘。千里孤坟，无处话凄凉。纵使相逢应不识，尘满面，鬓如霜。夜来幽梦忽还乡，小轩窗，正梳妆。相顾无言，惟有泪千行。料得年年肠断处，明月夜，短松冈。')        
     else:
         a=1;
 #        print('')
