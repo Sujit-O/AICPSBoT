@@ -10,7 +10,7 @@ import logging
 from emoji import emojize
 from time import gmtime, strftime, localtime
 from uuid import uuid4
-from weather import Weather
+#from weather import Weather
 
 
     
@@ -58,7 +58,7 @@ def echo(bot, update):
         return  
     if  'weather' in text:
         bot.send_message(chat_id=update.message.chat_id, text= 'I cannt forecast weather yet!')
-       # weather = Weather()
+        # weather = Weather()
         #location = weather.lookup_by_location('irvine')
         #condition = location.condition()
         #bot.send_message(chat_id=update.message.chat_id, text= condition['text'])
