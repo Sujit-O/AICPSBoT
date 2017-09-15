@@ -16,7 +16,7 @@ from argparse import ArgumentParser
 from xml.dom import minidom
 from urllib.request import urlopen
 from urllib.parse import urlencode
-#from weather import Weather
+from weather import Weather
 
 API_URL = "http://www.google.com/ig/api?"
     
@@ -32,7 +32,7 @@ logger = logging.getLogger(__name__)
 # update. Error handlers also receive the raised TelegramError object in error.
 
 def weather():
-	location='irvine'
+    location='irvine'
     url = API_URL + urlencode({"weather": location})
     xml = urlopen(url).read()
     doc = minidom.parseString(xml)
