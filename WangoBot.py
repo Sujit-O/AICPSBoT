@@ -207,6 +207,27 @@ def echo(bot, update):
     if  'are' in text and 'you' in text and 'jiang' in text:
         bot.send_message(chat_id=update.message.chat_id, text='hmm, well I try to be better representation of Jiang.')
         return
+    if  'are' in text and 'you' in text and 'korosh' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='I wish! Not Korosh.')
+        return 
+    if  'are' in text and 'you' in text and 'anthony' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='If I were Anthony, I would be modeling in  fashion show, with that handsome face!')
+        return
+    if  'are' in text and 'you' in text and 'haeseung' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Igoo, I wish. He is graduating and settling down. I donot know when i will do that!')
+        return
+    if  'are' in text and 'you' in text and 'sina' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='common, i am not him okay! Sina is way cooler!')
+        return  
+    if  'are' in text and 'you' in text and 'nafiul' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='no, I am not Nafiul either!')
+        return    
+    if  'are' in text and 'you' in text and 'ahmad' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Hmm, nope, not a rich arab guy either!')
+        return      
+    if  'are' in text and 'you' in text and 'professor' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Chuck Norris once tried to be close to him, got burnt to ashes!, so nope I am not professor')
+        return        
     if  'who' in text and 'in' in text and 'lab' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Currently we have 6 PhD students, one about to graduate, and 4 MS students in the lab')
         return  
