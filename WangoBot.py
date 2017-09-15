@@ -47,6 +47,9 @@ def echo(bot, update):
     if  'professor' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I think around september 26th!')
         return
+    if  'weather' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='I cannot tell you weather yet!')
+        return  
     if  'have' in text and 'weekend' in text:
         bot.send_message(chat_id=update.message.chat_id, text=emojize('AICPS member is supposed to spend all the time in the lab, even in the weekend! :rage:', use_aliases=True))
         return  
@@ -289,7 +292,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Greatest Adviser in the planet!')
     elif 'curry' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Did you just say curry! I am up for it. Want to go?')   
-    elif 'like' in text: 
+    elif 'like' in text and 'you' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='I love Curry and nothing else!') 
     elif 'andrew' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Andrew Left Us!!')  
