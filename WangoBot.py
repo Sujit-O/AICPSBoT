@@ -222,7 +222,7 @@ def echo(bot, update):
     if  'are' in text and 'you' in text and 'nafiul' in text:
         bot.send_message(chat_id=update.message.chat_id, text='no, I am not Nafiul either!')
         return    
-    if  'are' in text and 'you' in text and 'ahmed' in text:
+    if  'are' in text and 'you' in text and 'ahmad' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Hmm, nope, not a rich arab guy either!')
         return      
     if  'are' in text and 'you' in text and 'professor' in text:
