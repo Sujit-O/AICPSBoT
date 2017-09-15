@@ -61,7 +61,7 @@ def echo(bot, update):
         if localtime().tm_hour<22:
           bot.send_message(chat_id=update.message.chat_id, text='What! It is not even 10 pm and you are going home! not like an AICPS student!')
         return  
-    if  'lunch?':
+    if  'lunch?' in text:
         if localtime().tm_hour<11:
           bot.send_message(chat_id=update.message.chat_id, text='Too early for lunch. It is just')
           bot.send_message(chat_id=update.message.chat_id, text=strftime("%H:%M", localtime()))
@@ -71,7 +71,7 @@ def echo(bot, update):
         else:
           bot.send_message(chat_id=update.message.chat_id, text='Yes! Where do you want to go?')
         return 
-    if  'dinner?':
+    if  'dinner?' in text:
         if localtime().tm_hour<18:
           bot.send_message(chat_id=update.message.chat_id, text='Too early for dinner? although I am hungry, but it is just')
           bot.send_message(chat_id=update.message.chat_id, text=strftime("%H:%M", localtime()))
@@ -81,7 +81,7 @@ def echo(bot, update):
         else:
           bot.send_message(chat_id=update.message.chat_id, text='Yes! Where do you want to go for dinner?')
         return  
-    if  'breakfast?':
+    if  'breakfast?' in text:
         if localtime().tm_hour<6:
           bot.send_message(chat_id=update.message.chat_id, text='Too early for breakfast? although I am hungry, but it is just')
           bot.send_message(chat_id=update.message.chat_id, text=strftime("%H:%M", localtime()))
