@@ -112,7 +112,7 @@ def echo(bot, update):
     elif 'yes' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Oh Great! How may I helpy you?') 
     elif 'no!' in text: 
-        bot.send_message(chat_id=update.message.chat_id, text='Okay, jeez, no need to be rude!') 
+        bot.send_message(chat_id=update.message.chat_id, text='Okay, jeez, no need to be rude!')  
     elif 'rude' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Yes you were rude!')  
     elif 'favorite' in text: 
