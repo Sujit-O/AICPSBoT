@@ -294,7 +294,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Oh Great! How may I helpy you?') 
     elif 'no!' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Okay, jeez, no need to be rude!')  
-    elif 'rude' in text: 
+    elif 'rude' in text and 'not' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Yes you were rude!')  
     elif 'favorite' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Curry all the way baby! Hell Yay!!')
@@ -320,13 +320,14 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='ni hao!') 
     elif 'gay' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='I am gay too!')  
-    elif 'how' in text: 
+    elif 'how' in text and 'are' in text and 'you' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='I am doing good? How about you?')
     elif 'nani' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='为什么你困惑？')  
+        bot.send_message(chat_id=update.message.chat_id, text=emojize(':trollface:', use_aliases=True))
     elif 'stop' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='I will stop if you will!')   
-    elif 'want' in text: 
+    elif 'want' in text and 'you' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='I want to help you!')
     elif 'job' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Everybody should start looking for  a job!')   
@@ -338,9 +339,9 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Did you mention north Korea! We are doomed!') 
     elif 'trump' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='All hail our president the great! ssh! they are listening, go along!')    
-    elif 'lab' in text: 
+    elif 'lab' in text and 'who' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='There is no one in the lab, I miss you! Come back!') 
-    elif 'new' in text: 
+    elif 'new' in text and 'there' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Yes there is something new waiting for you!') 
     elif 'bangla' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='I know some Bengali! আপনি একজন সুন্দর মানুষ!') 
@@ -385,7 +386,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='sssh! I am scared!')  
     elif 'sure' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Oh! look at mister I am sure about everything!')  
-    elif 'cool' in text: 
+    elif 'cool!' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Jiango Wango is always cool my friend!') 
     elif 'advisor' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='http://www.grad.uci.edu/academics/graduate%20advisor%20responsibilities/index.html')                 
@@ -410,7 +411,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Well I am not sure if I can help. But, i will give it a try unlike other non responsive people here in the group!')    
     elif 'hot' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Oh thank you!, I am glad you find me hot, but please keep personal comment to yourself!')    
-    elif 'what' in text: 
+    elif 'what' in text and 'is' in text and 'this' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Well! I donot know what it is actually!')        
     elif 'preliminary' in text and 'exam' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='find more details here http://engineering.uci.edu/dept/eecs/graduate/roadmap_phd/prelim_cpe1')            
