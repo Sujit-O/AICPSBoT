@@ -150,6 +150,10 @@ def echo(bot, update):
     if  'today' in text and 'date' in text:
         bot.send_message(chat_id=update.message.chat_id, text=strftime("%a, %d %b %Y", localtime()))
         #strftime("%a, %d %b %Y %H:%M:%S +0000", gmtime())
+        return 
+    if  'tell' in text and 'date' in text:
+        bot.send_message(chat_id=update.message.chat_id, text=strftime("%a, %d %b %Y", localtime()))
+        #strftime("%a, %d %b %Y %H:%M:%S +0000", gmtime())
         return  
     if  'piss' in text and 'off' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I am sorry that I could not be of any help to you! sadness!')
