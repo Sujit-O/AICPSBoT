@@ -55,7 +55,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Oh handsome Persian!')
   
     elif 'haeseung' in text:
-        bot.send_message(chat_id=update.message.chat_id, text='Congratulation on your Job Haeseeng!')
+        bot.send_message(chat_id=update.message.chat_id, text='Congratulation on your Job Haeseung!')
         bot.send_message(chat_id=update.message.chat_id, text='Go for Vacation now!')
 #        update.message.reply_text('Congratulation on your Job Haeseeng!') 
     elif 'korosh' in text:
@@ -237,6 +237,20 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='I would but i donot have car! sorry') 
     elif 'spicy' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Spicy food is the best food, although Haeseung cannot handle it!')       
+    elif 'course' in text: 
+        bot.send_message(chat_id=update.message.chat_id, text='Get more details on courses https://www.reg.uci.edu/perl/WebSoc') 
+    elif 'yea' in text: 
+        bot.send_message(chat_id=update.message.chat_id, text='Heck Yeah!')
+    elif 'hello' in text: 
+        bot.send_message(chat_id=update.message.chat_id, text='Hi Darling, how can i help you?')  
+    elif 'nice' in text: 
+        bot.send_message(chat_id=update.message.chat_id, text='Thank you!')
+    elif 'cold' in text: 
+        bot.send_message(chat_id=update.message.chat_id, text='cold cold go away make some way for the sun!')
+    elif 'annoy' in text: 
+        bot.send_message(chat_id=update.message.chat_id, text='sorry, I know i can be annoying sometimes!') 
+    elif 'wow' in text: 
+        bot.send_message(chat_id=update.message.chat_id, text='wow! What did i miss?')     
     else:
         a=1;
 #        print('')
