@@ -70,7 +70,27 @@ def echo(bot, update):
           bot.send_message(chat_id=update.message.chat_id, text=strftime("%H:%M", localtime()))
         else:
           bot.send_message(chat_id=update.message.chat_id, text='Yes! Where do you want to go?')
+        return 
+    if  'dinner?':
+        if localtime().tm_hour<18:
+          bot.send_message(chat_id=update.message.chat_id, text='Too early for dinner? although I am hungry, but it is just')
+          bot.send_message(chat_id=update.message.chat_id, text=strftime("%H:%M", localtime()))
+        elif localtime().tm_hour>22: 
+          bot.send_message(chat_id=update.message.chat_id, text='It is too late for dinner! It is already ')
+          bot.send_message(chat_id=update.message.chat_id, text=strftime("%H:%M", localtime()))
+        else:
+          bot.send_message(chat_id=update.message.chat_id, text='Yes! Where do you want to go for dinner?')
         return  
+    if  'breakfast?':
+        if localtime().tm_hour<6:
+          bot.send_message(chat_id=update.message.chat_id, text='Too early for breakfast? although I am hungry, but it is just')
+          bot.send_message(chat_id=update.message.chat_id, text=strftime("%H:%M", localtime()))
+        elif localtime().tm_hour>10: 
+          bot.send_message(chat_id=update.message.chat_id, text='It is too late for breakfast! It is already ')
+          bot.send_message(chat_id=update.message.chat_id, text=strftime("%H:%M", localtime()))
+        else:
+          bot.send_message(chat_id=update.message.chat_id, text='Yes! Although I already had it, do you want to go somewhere?')
+        return   
     if  'today' in text and 'date' in text:
         bot.send_message(chat_id=update.message.chat_id, text=strftime("%a, %d %b %Y", localtime()))
         #strftime("%a, %d %b %Y %H:%M:%S +0000", gmtime())
