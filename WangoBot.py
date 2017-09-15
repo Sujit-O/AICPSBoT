@@ -260,7 +260,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='yo también te amo')
         bot.send_message(chat_id=update.message.chat_id, text='আমিও তোমাকে ভালবাসি')
         bot.send_message(chat_id=update.message.chat_id, text='मा पनि तिमीलाई माया गर्छु')
-     elif 'nepalese' in text: 
+    elif 'nepalese' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='नमस्ते मेरो नाम jiango वांग हो')   
         
         
