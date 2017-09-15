@@ -47,6 +47,9 @@ def echo(bot, update):
     if  'professor' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I think around september 26th!')
         return
+    if  'I don\'t know' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Well, if you don\'t know, then how am i supposed to know anything!')
+        return  
     if  'arab' in text or 'arabic' in text:
         bot.send_message(chat_id=update.message.chat_id, text='وقد استنير نظرتك الجميلة بلدي سولد عزيزي، وهذا هو السبب في أنني أحبك إلى القمر والعودة.')
         return  
