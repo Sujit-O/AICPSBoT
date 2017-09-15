@@ -44,6 +44,9 @@ def echo(bot, update):
     if  'professor' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I think around september 26th!')
         return 
+    if  text =='hi' or text =='hi!' or text == 'hola' or text =='hey':
+        bot.send_message(chat_id=update.message.chat_id, text='Hello my best friend, I missed you so much!')
+        return  
     if  'good' in text and 'morning' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Good Morning to you too! Hope you will have an amazing day!')
         return
