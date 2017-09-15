@@ -48,27 +48,29 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='He went to professor Pai chou!')
         return  
       
-    if  'jiang' in text:
+    if  'jiang' in text and 'i' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Oh I know you Jiang, you are getting big!')
         bot.send_message(chat_id=update.message.chat_id, text='Need some exercises!')
         
         for i in range(1,2):
             bot.send_message(chat_id=update.message.chat_id, text='Want to go Curry?')
-    elif 'anthony' in text:
+    elif 'anthony' in text and 'i' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Oh the only American in the lab!')
         bot.send_message(chat_id=update.message.chat_id, text='Really good with bats, if you know What i mean!')
 #        update.message.reply_text('Oh the only American in the lab!')
-    elif 'sina' in text:
+    elif 'sina' in text and 'i' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Oh handsome Persian!')
+    elif 'name' in text and 'your' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='I am Jiango Wango. What is your name?')  
   
-    elif 'haeseung' in text:
+    elif 'haeseung' in text and 'i' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Congratulation on your Job Haeseung!')
         bot.send_message(chat_id=update.message.chat_id, text='Go for Vacation now!')
 #        update.message.reply_text('Congratulation on your Job Haeseeng!') 
-    elif 'korosh' in text:
+    elif 'korosh' in text and 'i' in text:
         bot.send_message(chat_id=update.message.chat_id, text='When are you coming back to the lab Korosh')
 #        update.message.reply_text('When are you coming back to the lab Korosh')
-    elif 'sujit' in text:
+    elif 'sujit' in text and 'i' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Sujit,needs to get a life! Just my personal opinion.')
 #        update.message.reply_text('Oh Sujit, I heard you are so handsome!')
     elif 'ctm' in text:
@@ -132,7 +134,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='I do not drink alcohols btw!')  
     elif 'research' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='You have done enough research for the day!, go have fun!')
-    elif 'nafiul' in text: 
+    elif 'nafiul' in text and 'i' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Your seat is empty here in the lab Nafiul')
     elif 'cool' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='No problem bro')  
