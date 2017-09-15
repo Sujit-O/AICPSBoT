@@ -324,7 +324,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='I am doing good? How about you?')
     elif 'nani' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='为什么你困惑？')  
-        bot.send_message(chat_id=update.message.chat_id, text=emojize(':trollface:', use_aliases=True))
+        bot.send_message(chat_id=update.message.chat_id, text=emojize(':wink:', use_aliases=True))
     elif 'stop' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='I will stop if you will!')   
     elif 'want' in text and 'you' in text: 
