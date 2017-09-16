@@ -53,6 +53,17 @@ def echo(bot, update):
     if  'professor' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I think around september 26th!')
         return
+    if  'how' in text and 'feeling' in text:
+        baseurl = "https://query.yahooapis.com/v1/public/yql?"
+        yql_query = "select item.condition from weather.forecast where woeid=2347589"
+        yql_url = baseurl + urllib.parse.urlencode({'q':yql_query}) + "&format=json"
+        result = urllib.request.urlopen(yql_url).read()
+        data = json.loads(result)
+        
+        bot.send_message(chat_id=update.message.chat_id, text='The Weather is '+data['query']['results']['channel']['item']['condition']['text'] + ', and I am feeling good')
+        return
+    
+    
     if  'how' in text and 'look' in text and 'like' in text:
         bot.send_message(chat_id=update.message.chat_id, text='My physical representation looks like this!')
         bot.send_photo(chat_id=update.message.chat_id, photo=open('D:/AICPSBot/jiang.jpg', 'rb'))
@@ -112,7 +123,7 @@ def echo(bot, update):
       
     if  'jiang' in text and 'sick' in text:
         baseurl = "https://query.yahooapis.com/v1/public/yql?"
-        yql_query = "select item.condition from weather.forecast where woeid=2427665"
+        yql_query = "select item.condition from weather.forecast where woeid=2347589"
         yql_url = baseurl + urllib.parse.urlencode({'q':yql_query}) + "&format=json"
         result = urllib.request.urlopen(yql_url).read()
         data = json.loads(result)
