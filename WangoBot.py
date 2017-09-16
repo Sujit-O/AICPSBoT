@@ -53,6 +53,10 @@ def echo(bot, update):
     if  'professor' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I think around september 26th!')
         return
+    if  'your' in text and 'sex' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Well I have not decided yet, this is 21st century. I can be anything you want me to be though!')
+        return
+      
     if  'sujit' in text and 'should' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Sujit still needs to finish 1000 Journals and million papers!')
         return  
@@ -247,6 +251,7 @@ def echo(bot, update):
         return  
      
     if  'weather' in text:
+        bot.send_message(chat_id=update.message.chat_id, text= 'Here is the weather update for you.')      
         baseurl = "https://query.yahooapis.com/v1/public/yql?"
         yql_query = "select location from weather.forecast where woeid=2427665"
         yql_url = baseurl + urllib.parse.urlencode({'q':yql_query}) + "&format=json"
