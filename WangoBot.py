@@ -53,6 +53,40 @@ def echo(bot, update):
     if  'professor' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I think around september 26th!')
         return
+    if  'sujit' in text and 'should' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Sujit still needs to finish 1000 Journals and million papers!')
+        return  
+    if  'jiang' in text and 'should' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Jiang needs to find a girlfriend and get married')
+        return 
+    if  'korosh' in text and 'should' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Korosh Use both hand for driving the car!')
+        return   
+    
+    if  'andrew' in text and 'should' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Andrew should have stayed in AICPS. AICPS rocks!')
+        return 
+    if  'anthony' in text and 'should' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Anthony should control his level of handsome to prevent inferiority complexe on other lab members')
+        return 
+    if  'sina' in text and 'should' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Common Sina should not do anything okay!')
+        return   
+    if  'haeseung' in text and 'should' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Haeseung, he should just relax now!')
+        return 
+      
+    if  'what' in text and 'aicps' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='It stands for Awesome Intelligent Capable People in Science')
+        bot.send_message(chat_id=update.message.chat_id, text='jk, it stands for Advanced Integrated Cyber-Physical Systems Lab')
+        bot.send_message(chat_id=update.message.chat_id, text='http://aicps.eng.uci.edu/')
+        return  
+      
+    if  'prof' in text and 'office' in text:
+        
+        bot.send_message(chat_id=update.message.chat_id, text='He may or may not be in the lab')
+       
+        return  
       
     if  'need' in text and 'food' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Here is the list of top ten restaurant in irvine')
@@ -62,7 +96,17 @@ def echo(bot, update):
     if  'find' in text and 'sujit' in text:
         bot.send_message(chat_id=update.message.chat_id, text='He is always here!')
         bot.send_message(chat_id=update.message.chat_id, text='https://www.google.com/maps/place/Engineering+Hall,+Irvine,+CA+92617/@33.6437358,-117.8433888,17z/data=!3m1!4b1!4m5!3m4!1s0x80dcde0f9313de71:0xbf0421c19a5f1032!8m2!3d33.6437358!4d-117.8411948')
-        return  
+        return 
+      
+    if  'find' in text and 'jiang' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='He is here for the fall 2017!')
+        bot.send_message(chat_id=update.message.chat_id, text='https://www.google.com/maps/place/Siemens+Corporate+Technology/@40.3442079,-74.5946539,17z/data=!3m1!4b1!4m5!3m4!1s0x89c3e75ff634037d:0x86c37f93fcee476e!8m2!3d40.3442079!4d-74.5924599')
+        return 
+      
+    if  'find' in text and 'prof' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='He is in your mind, and always!')
+        
+        return
       
     if  'write' in text and 'paper' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I wish I could help you write paper but sadly I cannot')
