@@ -59,6 +59,11 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='https://www.yelp.com/search?cflt=restaurants&find_loc=Irvine%2C+CA%2C+USA')
         return
       
+    if  'find' in text and 'sujit' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='He is always here!')
+        bot.send_message(chat_id=update.message.chat_id, text='https://www.google.com/maps/place/Engineering+Hall,+Irvine,+CA+92617/@33.6437358,-117.8433888,17z/data=!3m1!4b1!4m5!3m4!1s0x80dcde0f9313de71:0xbf0421c19a5f1032!8m2!3d33.6437358!4d-117.8411948')
+        return  
+      
     if  'write' in text and 'paper' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I wish I could help you write paper but sadly I cannot')
        
