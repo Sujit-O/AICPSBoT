@@ -53,9 +53,13 @@ def echo(bot, update):
     if  'professor' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I think around september 26th!')
         return
+    if  'how' in text and 'look' in text and 'like' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='My physical representation looks like this!')
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('D:/AICPSBot/jiang.jpg', 'rb'))
+        return  
     if  'image' in text:
-        
-        bot.send_photo(chat_id=update.message.chat_id, photo=open('D:/AICPSBot/anthony.png', 'rb'))
+        bot.send_message(chat_id=update.message.chat_id, text='Although I am digital Twin of Jiang, one day I hope to have his body and image!')
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('D:/AICPSBot/jiang.jpg', 'rb'))
         return  
     if  'who' in text and 'created' in text and 'you' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Jiang Wan is my creator, because i am striving to be his mirror image!')
