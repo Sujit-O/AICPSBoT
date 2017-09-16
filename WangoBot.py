@@ -77,10 +77,10 @@ def echo(bot, update):
         return
       
     if  'jiang' in text and 'should' in text:
-        bot.send_message(chat_id=update.message.chat_id, text='Jiang needs to find a girlfriend and get married')
+        bot.send_message(chat_id=update.message.chat_id, text='Jiang needs to find a girlfriend and get married, out of all the other thing he should do!')
         return 
     if  'korosh' in text and 'should' in text:
-        bot.send_message(chat_id=update.message.chat_id, text='Korosh Use both hand for driving the car!')
+        bot.send_message(chat_id=update.message.chat_id, text='He should also use both hand for driving the car!')
         return   
     
     if  'andrew' in text and 'should' in text:
