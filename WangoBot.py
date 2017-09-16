@@ -53,6 +53,12 @@ def echo(bot, update):
     if  'professor' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I think around september 26th!')
         return
+    if  'who' in text and 'created' in text and 'you' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Jiang Wan is my creator, because i am striving to be his mirror image!')
+        return 
+    if  'creator' in text and 'your' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Jiang Wan is my creator, because i am striving to be his mirror image!')
+        return   
     if  'sujit' in text and 'curry' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Although Sujit likes curry more, atleast he can survive without it!')
         return
