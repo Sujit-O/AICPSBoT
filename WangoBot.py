@@ -380,7 +380,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='For some reason the answer is 42, but for me, eating sleeping and eating again is what life stands for!')    
     elif 'wango' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Hi! Did you mention my name?') 
-    elif 'yes' in text: 
+    elif text=='yes': 
         bot.send_message(chat_id=update.message.chat_id, text='Oh Great! How may I helpy you?') 
     elif 'no!' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Okay, jeez, no need to be rude!')  
