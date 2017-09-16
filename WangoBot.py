@@ -67,6 +67,10 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Here are some stocks data, maybe you will be rich investing on it')
         bot.send_message(chat_id=update.message.chat_id, text='https://finance.google.com/finance?ei=mru8WbiIBcGqjAGcoaBg#stockscreener')
         return 
+    
+    if  'god' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='hmm God, well I believe there is higher power.')
+        return
       
     if  'turing' in text and 'test' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Haha, I cannot even fool a puppy right now let alone pass the turing test!')
