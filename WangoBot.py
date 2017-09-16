@@ -99,7 +99,20 @@ def echo(bot, update):
         result = urllib.request.urlopen(yql_url).read()
         data = json.loads(result)
         bot.send_message(chat_id=update.message.chat_id, text= data['query']['results'])
+     
+    if  'weather' in text and 'new jersey' in text:
+        baseurl = "https://query.yahooapis.com/v1/public/yql?"
+        yql_query = "select location from weather.forecast where woeid=2347589"
+        yql_url = baseurl + urllib.parse.urlencode({'q':yql_query}) + "&format=json"
+        result = urllib.request.urlopen(yql_url).read()
+        data = json.loads(result)
+        bot.send_message(chat_id=update.message.chat_id, text= data['query']['results'])
         
+        yql_query = "select item.condition from weather.forecast where woeid=2347589"
+        yql_url = baseurl + urllib.parse.urlencode({'q':yql_query}) + "&format=json"
+        result = urllib.request.urlopen(yql_url).read()
+        data = json.loads(result)
+        bot.send_message(chat_id=update.message.chat_id, text= data['query']['results'])   
         
         return  
     if  'have' in text and 'weekend' in text:
