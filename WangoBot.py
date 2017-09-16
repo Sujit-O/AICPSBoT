@@ -400,7 +400,13 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Hello my best friend, I missed you so much!')
         return  
     if  'good' in text and 'morning' in text:
-        bot.send_message(chat_id=update.message.chat_id, text='Good Morning to you too! Hope you will have an amazing day!')
+        bot.send_message(chat_id=update.message.chat_id, text='Good Morning to you too!')
+        baseurl = "https://query.yahooapis.com/v1/public/yql?"
+        yql_query = "select item.condition from weather.forecast where woeid=2427665"
+        yql_url = baseurl + urllib.parse.urlencode({'q':yql_query}) + "&format=json"
+        result = urllib.request.urlopen(yql_url).read()
+        data = json.loads(result)
+        bot.send_message(chat_id=update.message.chat_id, text= 'Temp in irvine right now is '+data['query']['results']['channel']['item']['condition']['temp']+' F and weather is '+data['query']['results']['channel']['item']['condition']['text']+'. Hope you will have an amazing day! Dewa gokigen yō')
         return
     if  'good' in text and 'night' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Sweet Dreams, Sleep tight, donot let the bed bugs bite!')
