@@ -48,13 +48,14 @@ def escape_markdown(text):
 def echo(bot, update):
     text=update.message.text
     text=str.lower(text)
-    
+    bot.send_chat_action(chat_id=update.message.chat_id, action=telegram.ChatAction.TYPING)
 #    bot.send_message(chat_id=update.message.chat_id, text="I'm a bot, please talk to me!")
     if  'professor' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I think around september 26th!')
         return
     if  'image' in text:
-        bot.send_photo(chat_id=chat_id, photo=open('D:/AICPSBot/anthony.png', 'rb'))
+        
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('D:/AICPSBot/anthony.png', 'rb'))
         return  
     if  'who' in text and 'created' in text and 'you' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Jiang Wan is my creator, because i am striving to be his mirror image!')
