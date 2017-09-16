@@ -82,6 +82,10 @@ def echo(bot, update):
     if  'andrew' in text and 'should' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Andrew should have stayed in AICPS. AICPS rocks!')
         return 
+     if  'new' in text and 'movie' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='There are many upcoming movies. Just need to decide')
+        bot.send_message(chat_id=update.message.chat_id, text='https://www.google.com/search?q=upcoming+moves&oq=upcoming+moves&aqs=chrome..69i57j0l5.2373j0j4&client=ubuntu&sourceid=chrome&ie=UTF-8')
+        return  
     if  'anthony' in text and 'should' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Anthony should control his level of handsome to prevent inferiority complexe on other lab members')
         return 
