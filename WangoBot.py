@@ -56,6 +56,14 @@ def echo(bot, update):
     if  'sujit' in text and 'should' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Sujit still needs to finish 1000 Journals and million papers!')
         return  
+    if  'need' in text and 'money' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='hmm, I donot know how to help you with money!')
+        return   
+    if  'rich' in text or 'stock' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Here are some stocks data, maybe you will be rich investing on it')
+        bot.send_message(chat_id=update.message.chat_id, text='https://finance.google.com/finance?ei=mru8WbiIBcGqjAGcoaBg#stockscreener')
+        return 
+      
     if  'turing' in text and 'test' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Haha, I cannot even fool a puppy right now let alone pass the turing test!')
         return
