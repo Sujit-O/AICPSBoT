@@ -48,7 +48,7 @@ def escape_markdown(text):
 def echo(bot, update):
     text=update.message.text
     text=str.lower(text)
-    bot.send_chat_action(chat_id=update.message.chat_id, action=telegram.ChatAction.TYPING)
+    #bot.send_chat_action(chat_id=update.message.chat_id, action=telegram.ChatAction.TYPING)
 #    bot.send_message(chat_id=update.message.chat_id, text="I'm a bot, please talk to me!")
     if  'professor' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I think around september 26th!')
