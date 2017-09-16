@@ -136,7 +136,7 @@ def echo(bot, update):
     if  'have' in text and 'weekend' in text:
         bot.send_message(chat_id=update.message.chat_id, text=emojize('AICPS member is supposed to spend all the time in the lab, even in the weekend! :rage:', use_aliases=True))
         return  
-    if  'goo' in text:
+    if  'gooo' in text:
         bot.send_message(chat_id=update.message.chat_id, text='gooooo! Pick me up please!')
         return 
     if  'okay' in text or 'kk' in text or 'good!' in text or 'thnx' in text or 'sure!' in text:
