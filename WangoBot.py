@@ -56,6 +56,10 @@ def echo(bot, update):
     if  'sujit' in text and 'should' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Sujit still needs to finish 1000 Journals and million papers!')
         return  
+    if  'turing' in text and 'test' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Haha, I cannot even fool a puppy right now let alone pass the turing test!')
+        return
+      
     if  'jiang' in text and 'should' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Jiang needs to find a girlfriend and get married')
         return 
