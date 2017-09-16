@@ -53,6 +53,27 @@ def echo(bot, update):
     if  'professor' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I think around september 26th!')
         return
+      
+    if  'need' in text and 'food' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Here is the list of top ten restaurant in irvine')
+        bot.send_message(chat_id=update.message.chat_id, text='https://www.yelp.com/search?cflt=restaurants&find_loc=Irvine%2C+CA%2C+USA')
+        return
+      
+    if  'write' in text and 'paper' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='I wish I could help you write paper but sadly I cannot')
+       
+        return  
+    
+    if  'good' in text and 'afternoon' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Good afternoon to you too!')
+       
+        return 
+    
+    if  'need' in text and 'sleep' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Here is a lullaby you can listen and fall asleep')
+        bot.send_message(chat_id=update.message.chat_id, text='https://www.youtube.com/watch?v=qVDgVe1yGOg')
+        return
+      
     if  'how' in text and 'feeling' in text:
         baseurl = "https://query.yahooapis.com/v1/public/yql?"
         yql_query = "select item.condition from weather.forecast where woeid=2347589"
@@ -60,9 +81,18 @@ def echo(bot, update):
         result = urllib.request.urlopen(yql_url).read()
         data = json.loads(result)
         
-        bot.send_message(chat_id=update.message.chat_id, text='The Weather is '+data['query']['results']['channel']['item']['condition']['text'] + ', and I am feeling good')
+        bot.send_message(chat_id=update.message.chat_id, text='The Weather is '+data['query']['results']['channel']['item']['condition']['text'] + ', and this is making me feeling good')
         return
-    
+      
+    if  'how' in text and 'doing' in text:
+        baseurl = "https://query.yahooapis.com/v1/public/yql?"
+        yql_query = "select item.condition from weather.forecast where woeid=2347589"
+        yql_url = baseurl + urllib.parse.urlencode({'q':yql_query}) + "&format=json"
+        result = urllib.request.urlopen(yql_url).read()
+        data = json.loads(result)
+        
+        bot.send_message(chat_id=update.message.chat_id, text='The Weather is '+data['query']['results']['channel']['item']['condition']['text'] + ', and I am doing good')
+        return
     
     if  'how' in text and 'look' in text and 'like' in text:
         bot.send_message(chat_id=update.message.chat_id, text='My physical representation looks like this!')
