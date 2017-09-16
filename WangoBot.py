@@ -80,13 +80,14 @@ def echo(bot, update):
     if  'wango' in text and 'fuck' in text and 'you' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Jezz no need to be rude like that. Why are you so mean?')
         return
+     
     if  'i don' in text and 'know' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Well, if you don\'t know, then how am i supposed to know anything!')
         return  
     if  'arab' in text or 'arabic' in text:
         bot.send_message(chat_id=update.message.chat_id, text='وقد استنير نظرتك الجميلة بلدي سولد عزيزي، وهذا هو السبب في أنني أحبك إلى القمر والعودة.')
         return  
-    if  'weather' in text:
+    if  'weather' in text and 'irvine' in text:
         baseurl = "https://query.yahooapis.com/v1/public/yql?"
         yql_query = "select location from weather.forecast where woeid=2427665"
         yql_url = baseurl + urllib.parse.urlencode({'q':yql_query}) + "&format=json"
@@ -99,6 +100,7 @@ def echo(bot, update):
         result = urllib.request.urlopen(yql_url).read()
         data = json.loads(result)
         bot.send_message(chat_id=update.message.chat_id, text= data['query']['results'])
+        return
      
     if  'weather' in text and 'new jersey' in text:
         baseurl = "https://query.yahooapis.com/v1/public/yql?"
@@ -115,6 +117,22 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text= data['query']['results'])   
         
         return  
+     
+    if  'weather' in text:
+        baseurl = "https://query.yahooapis.com/v1/public/yql?"
+        yql_query = "select location from weather.forecast where woeid=2427665"
+        yql_url = baseurl + urllib.parse.urlencode({'q':yql_query}) + "&format=json"
+        result = urllib.request.urlopen(yql_url).read()
+        data = json.loads(result)
+        bot.send_message(chat_id=update.message.chat_id, text= data['query']['results'])
+        
+        yql_query = "select item.condition from weather.forecast where woeid=2427665"
+        yql_url = baseurl + urllib.parse.urlencode({'q':yql_query}) + "&format=json"
+        result = urllib.request.urlopen(yql_url).read()
+        data = json.loads(result)
+        bot.send_message(chat_id=update.message.chat_id, text= data['query']['results'])
+        return
+      
     if  'have' in text and 'weekend' in text:
         bot.send_message(chat_id=update.message.chat_id, text=emojize('AICPS member is supposed to spend all the time in the lab, even in the weekend! :rage:', use_aliases=True))
         return  
