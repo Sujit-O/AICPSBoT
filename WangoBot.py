@@ -53,6 +53,9 @@ def echo(bot, update):
     if  'professor' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I think around september 26th!')
         return
+    if  'image' in text:
+        bot.send_photo(chat_id=chat_id, photo=open('D:/AICPSBot/anthony.png', 'rb'))
+        return  
     if  'who' in text and 'created' in text and 'you' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Jiang Wan is my creator, because i am striving to be his mirror image!')
         return 
