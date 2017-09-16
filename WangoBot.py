@@ -154,6 +154,11 @@ def echo(bot, update):
         
         bot.send_message(chat_id=update.message.chat_id, text='The Weather is '+data['query']['results']['channel']['item']['condition']['text'] + ', and I am doing good')
         return
+      
+    if  'your' in text and 'picture' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='My physical representation looks like this!')
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('D:/AICPSBot/jiang.jpg', 'rb'))
+        return
     
     if  'how' in text and 'look' in text and 'like' in text:
         bot.send_message(chat_id=update.message.chat_id, text='My physical representation looks like this!')
