@@ -11,8 +11,10 @@ from emoji import emojize
 from time import gmtime, strftime, localtime
 from uuid import uuid4
 
+import urllib, json
 
-    
+
+
 import re
 # Enable logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -24,8 +26,7 @@ logger = logging.getLogger(__name__)
 # Define a few command handlers. These usually take the two arguments bot and
 # update. Error handlers also receive the raised TelegramError object in error.
 
-
-        
+       
 def start(bot, update):
     update.message.reply_text('Hi!')
     update.message.reply_text('I am Jiango Wango, your friendly Colleague. What is your name?')
@@ -80,8 +81,12 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='وقد استنير نظرتك الجميلة بلدي سولد عزيزي، وهذا هو السبب في أنني أحبك إلى القمر والعودة.')
         return  
     if  'weather' in text:
-        
-        bot.send_message(chat_id=update.message.chat_id, text= 'I cannt forecast weather yet!')
+        baseurl = "https://query.yahooapis.com/v1/public/yql?"
+        yql_query = "select wind from weather.forecast where woeid=2460286"
+        yql_url = baseurl + urllib.parse.urlencode({'q':yql_query}) + "&format=json"
+        result = urllib.request.urlopen(yql_url).read()
+        data = json.loads(result)
+        bot.send_message(chat_id=update.message.chat_id, text= data['query']['results'])
         # weather = Weather()
         #location = weather.lookup_by_location('irvine')
         #condition = location.condition()
