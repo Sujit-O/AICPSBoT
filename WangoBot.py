@@ -386,7 +386,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='I am sorry that I could not be of any help to you! sadness!')
         return 
     if  '...' in text:
-        bot.send_message(chat_id=update.message.chat_id, text='... ... O<B=<')
+        bot.send_message(chat_id=update.message.chat_id, text='... ... #$#!$#!%!#%!')
         return  
     if  'shut up' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Shutting up in 5')
