@@ -65,11 +65,25 @@ def echo(bot, update):
     if  'zero' in text and 'divided' in text:
         bot.send_message(chat_id=update.message.chat_id, text= 'if you have zero paper published and make each section out of it in thesis, how many pages will your thesis be. Does this makes sense! It does not now does it. stop asking silly questions.')
         
+        return 
+    if  'favorite' in text and 'movie' in text:
+        bot.send_message(chat_id=update.message.chat_id, text= 'mine has to be the inception, its like a recursive functions. I love recursive functions.!')
+        
         return  
     if  'drunk' in text:
         bot.send_message(chat_id=update.message.chat_id, text= 'Well, seems like we will have some deep conversation now! ')
         
         return
+    
+    if  'naked' in text:
+        bot.send_message(chat_id=update.message.chat_id, text= 'hmm, I will pretend I didnot read this!')
+        
+        return
+      
+    if  'i' in text and 'father' in text:
+        bot.send_message(chat_id=update.message.chat_id, text= 'nooooo!')
+        
+        return  
       
     if  'weather' in text and 'kuwait' in text:
         baseurl = "https://query.yahooapis.com/v1/public/yql?"
