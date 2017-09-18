@@ -74,9 +74,24 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text= 'Well, seems like we will have some deep conversation now! ')
         
         return
+      
+    if  'privacy' in text and 'violated' in text:
+        bot.send_message(chat_id=update.message.chat_id, text= 'Oh common, google and facebook already knows everything that runs in your mind! ')
+        return 
+      
+    if  'bot' in text and 'spam' in text:
+        bot.send_message(chat_id=update.message.chat_id, text= 'Oh, so i am just a spam for you huh! Well you know what, you can go and inser the helical structure around a cone into yourself!')
+        return   
+    if  'bot' in text and 'collect' in text:
+        bot.send_message(chat_id=update.message.chat_id, text= 'No I am not collecting anything! Muahaha!')
+        return  
     
+    if  'why' in text and 'wango' in text and 'name' in text:
+        bot.send_message(chat_id=update.message.chat_id, text= 'I am named after the person who I aspire to be!')
+        return 
+      
     if  'naked' in text:
-        bot.send_message(chat_id=update.message.chat_id, text= 'hmm, I will pretend I didnot read this!')
+        bot.send_message(chat_id=update.message.chat_id, text= 'hmm, I will pretend I did not read this!')
         
         return
       
