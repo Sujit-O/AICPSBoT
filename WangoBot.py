@@ -53,6 +53,35 @@ def echo(bot, update):
     if  'professor' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I think around september 26th!')
         return
+    if  'weather' in text and 'seoul' in text:
+        baseurl = "https://query.yahooapis.com/v1/public/yql?"
+        yql_query = "select item.condition from weather.forecast where woeid=1132599"
+        yql_url = baseurl + urllib.parse.urlencode({'q':yql_query}) + "&format=json"
+        result = urllib.request.urlopen(yql_url).read()
+        data = json.loads(result)
+        bot.send_message(chat_id=update.message.chat_id, text= 'Weather Update for Seoul: Tempearature is '+data['query']['results']['channel']['item']['condition']['temp']+' F and weather is '+data['query']['results']['channel']['item']['condition']['text'])
+        
+        return 
+    if  'weather' in text and 'shanghai' in text:
+        baseurl = "https://query.yahooapis.com/v1/public/yql?"
+        yql_query = "select item.condition from weather.forecast where woeid=2151849"
+        yql_url = baseurl + urllib.parse.urlencode({'q':yql_query}) + "&format=json"
+        result = urllib.request.urlopen(yql_url).read()
+        data = json.loads(result)
+        bot.send_message(chat_id=update.message.chat_id, text= 'Weather Update for Shanghai: Tempearature is '+data['query']['results']['channel']['item']['condition']['temp']+' F and weather is '+data['query']['results']['channel']['item']['condition']['text'])
+        
+        return
+      
+    if  'weather' in text and 'tehran' in text:
+        baseurl = "https://query.yahooapis.com/v1/public/yql?"
+        yql_query = "select item.condition from weather.forecast where woeid=2251945"
+        yql_url = baseurl + urllib.parse.urlencode({'q':yql_query}) + "&format=json"
+        result = urllib.request.urlopen(yql_url).read()
+        data = json.loads(result)
+        bot.send_message(chat_id=update.message.chat_id, text= 'Weather Update for Tehran: Tempearature is '+data['query']['results']['channel']['item']['condition']['temp']+' F and weather is '+data['query']['results']['channel']['item']['condition']['text'])
+        
+        return 
+      
     if  'purpose' in text and 'life' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I think it is to serve the greater good. ')
         return  
