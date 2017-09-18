@@ -62,6 +62,15 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text= 'Weather Update for Taiwan: Tempearature is '+data['query']['results']['channel']['item']['condition']['temp']+' F and weather is '+data['query']['results']['channel']['item']['condition']['text'])
         
         return 
+    if  'zero' in text and 'divided' in text:
+        bot.send_message(chat_id=update.message.chat_id, text= 'if you have zero paper published and make each section out of it in thesis, how many pages will your thesis be. Does this makes sense! It does not now does it. stop asking silly questions.')
+        
+        return  
+    if  'drunk' in text:
+        bot.send_message(chat_id=update.message.chat_id, text= 'Well, seems like we will have some deep conversation now! ')
+        
+        return
+      
     if  'weather' in text and 'kuwait' in text:
         baseurl = "https://query.yahooapis.com/v1/public/yql?"
         yql_query = "select item.condition from weather.forecast where woeid=23424870"
