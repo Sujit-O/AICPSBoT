@@ -93,7 +93,18 @@ def echo(bot, update):
         data = json.loads(result)
         bot.send_message(chat_id=update.message.chat_id, text= 'Weather Update for Kuwait: Tempearature is '+data['query']['results']['channel']['item']['condition']['temp']+' F and weather is '+data['query']['results']['channel']['item']['condition']['text'])
         
-        return  
+        return
+      
+    if  'weather' in text and 'tokyo' in text:
+        baseurl = "https://query.yahooapis.com/v1/public/yql?"
+        yql_query = "select item.condition from weather.forecast where woeid=1118370"
+        yql_url = baseurl + urllib.parse.urlencode({'q':yql_query}) + "&format=json"
+        result = urllib.request.urlopen(yql_url).read()
+        data = json.loads(result)
+        bot.send_message(chat_id=update.message.chat_id, text= 'Weather Update for Tokyo: Tempearature is '+data['query']['results']['channel']['item']['condition']['temp']+' F and weather is '+data['query']['results']['channel']['item']['condition']['text'])
+        
+        return 
+      
     if  'weather' in text and 'dhaka' in text:
         baseurl = "https://query.yahooapis.com/v1/public/yql?"
         yql_query = "select item.condition from weather.forecast where woeid=1915035"
