@@ -53,6 +53,63 @@ def echo(bot, update):
     if  'professor' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I think around september 26th!')
         return
+    if  'anthony' in text and 'picture' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='I know how anthony looks like!')
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('D:/AICPSBot/anthony.jpg', 'rb'))
+        return
+    if  'anthony' in text and 'look' in text and 'like' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='I know how anthony looks like!')
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('D:/AICPSBot/anthony.jpg', 'rb'))
+        return  
+    if  'sina' in text and 'picture' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='I know how handsome sina looks like!')
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('D:/AICPSBot/sina.jpg', 'rb'))
+        return  
+    if  'sina' in text and 'look' in text and 'like' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='I know how handsome sina looks like!')
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('D:/AICPSBot/sina.jpg', 'rb'))
+        return 
+    if  'korosh' in text and 'picture' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='I know how amazing korosh looks like!')
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('D:/AICPSBot/korosh.jpg', 'rb'))
+        return  
+    if  'korosh' in text and 'look' in text and 'like' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='I know how amazing korosh looks like!')
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('D:/AICPSBot/korosh.jpg', 'rb'))
+        return 
+    if  'prof' in text and 'picture' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='I know how our Advisor looks like!')
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('D:/AICPSBot/professor.jpg', 'rb'))
+        return  
+    if  'prof' in text and 'look' in text and 'like' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='I know how our Advisor looks like!')
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('D:/AICPSBot/professor.jpg', 'rb'))
+        return 
+    if  'sujit' in text and 'picture' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='I know how sujit looks like!')
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('D:/AICPSBot/sujit.jpg', 'rb'))
+        return  
+    if  'sujit' in text and 'look' in text and 'like' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='I know how sujit looks like!')
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('D:/AICPSBot/sujit.jpg', 'rb'))
+        return
+    if  'haeseung' in text and 'picture' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='I know how Dr. Lee looks like!')
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('D:/AICPSBot/haeseung.jpg', 'rb'))
+        return  
+    if  'haeseung' in text and 'look' in text and 'like' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='I know how Dr. Lee looks like!')
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('D:/AICPSBot/haeseung.jpg', 'rb'))
+        return  
+    if  'professor' in text and 'back' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='I think around september 26th!')
+        return  
+    if  'have' in text and 'deadline' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Well We all have deadline, and when time comes we must leave this earth! But in the meantime, enjoy Dear!')
+        return  
+    if  'anthony' in text and 'stream' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Oh, I have watched his streams. https://www.twitch.tv/sakaki619')
+        return  
     if  'your' in text and 'sex' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Well I have not decided yet, this is 21st century. I can be anything you want me to be though!')
         return
