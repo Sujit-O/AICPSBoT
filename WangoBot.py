@@ -889,6 +889,10 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Hi Darling, how can i help you?')  
     elif 'nice' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Thank you!')
+    elif 'too' in text and 'small' in text: 
+        bot.send_message(chat_id=update.message.chat_id, text='Is that why she is upset with you! there there!') 
+    elif 'too' in text and 'big' in text: 
+        bot.send_message(chat_id=update.message.chat_id, text='That is what he or she said! #nogenderbias')     
     elif 'cold' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='cold cold go away make some way for the sun!')
     elif 'annoy' in text: 
@@ -898,7 +902,7 @@ def echo(bot, update):
     elif 'japan' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='私の名前はジャンゴ・ワンゴです')  
     elif 'haha' in text or 'lol' in text: 
-        bot.send_message(chat_id=update.message.chat_id, text=':-)')    
+        bot.send_message(chat_id=update.message.chat_id, text=':)')    
     elif 'love' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='我也爱你') 
         bot.send_message(chat_id=update.message.chat_id, text='من هم تو رو دوست دارم')
