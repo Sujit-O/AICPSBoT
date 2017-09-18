@@ -53,6 +53,10 @@ def echo(bot, update):
     if  'professor' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I think around september 26th!')
         return
+    if  'watch' in text and 'anime' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='I normally go to this website for animes.')
+        bot.send_message(chat_id=update.message.chat_id, text='http://www.crunchyroll.com/')
+        return  
     if  'anthony' in text and 'picture' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I know how anthony looks like!')
         bot.send_photo(chat_id=update.message.chat_id, photo=open('D:/AICPSBot/anthony.jpg', 'rb'))
