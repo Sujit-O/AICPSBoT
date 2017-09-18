@@ -51,7 +51,7 @@ def echo(bot, update):
     #bot.send_chat_action(chat_id=update.message.chat_id, action=telegram.ChatAction.TYPING)
 #    bot.send_message(chat_id=update.message.chat_id, text="I'm a bot, please talk to me!")
     if  'professor' in text and 'back' in text:
-        bot.send_message(chat_id=update.message.chat_id, text='I think around september 26th!')
+        bot.send_message(chat_id=update.message.chat_id, text='He is already back! Stop asking when he will be back and start working on your next paper!')
         return
     if  'weather' in text and 'taiwan' in text:
         baseurl = "https://query.yahooapis.com/v1/public/yql?"
