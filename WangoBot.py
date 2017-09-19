@@ -184,11 +184,11 @@ def echo(bot, update):
         return  
     if  'anthony' in text and 'picture' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I know how anthony looks like!')
-        bot.send_photo(chat_id=update.message.chat_id, photo=open('../../anthony.jpg', 'rb'))
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('/home/aicps/aicpsBot/anthony.jpg', 'rb'))
         return
     if  'anthony' in text and 'look' in text and 'like' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I know how anthony looks like!')
-        bot.send_photo(chat_id=update.message.chat_id, photo=open('../../anthony.jpg', 'rb'))
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('/home/aicps/aicpsBot/anthony.jpg', 'rb'))
         return  
     if  'sina' in text and 'picture' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I know how handsome sina looks like!')
