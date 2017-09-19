@@ -714,20 +714,13 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Greatest Adviser in the planet!')
     elif 'mohammad' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Greatest Adviser in the planet!')
-    elif 'curry' in text: 
+    elif 'curry' in text and 'want' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Did you just say curry! I am up for it. Want to go?')   
     elif 'like' in text and 'you' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='I love Curry and nothing else!') 
-    elif 'andrew' in text: 
-        bot.send_message(chat_id=update.message.chat_id, text='Andrew Left Us!!')  
-    elif 'drive' in text: 
-        bot.send_message(chat_id=update.message.chat_id, text='Want to Drive to Vegas??')  
-    elif 'prof' in text: 
-        bot.send_message(chat_id=update.message.chat_id, text='Hmm, I am scared with him!!') 
-    elif 'girl' in text: 
-        bot.send_message(chat_id=update.message.chat_id, text='Did anybody mention girl?') 
-    elif 'anime' in text: 
-        bot.send_message(chat_id=update.message.chat_id, text='Want to watch Tokyo Train girl instead?')
+   
+   
+   
     elif 'hi' in text and '!' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Hello my Friend!')  
     elif 'hungry' in text: 
@@ -750,10 +743,10 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Well, not everything is meant to be as easy as your existence!')     
     elif 'life' in text and 'mean' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='For some reason the answer is 42, but for me, eating sleeping and eating again is what life stands for!')    
-    elif 'wango' in text: 
-        bot.send_message(chat_id=update.message.chat_id, text='Hi! Did you mention my name?') 
+    #elif 'wango' in text: 
+        #bot.send_message(chat_id=update.message.chat_id, text='Hi! Did you mention my name?') 
     elif text=='yes': 
-        bot.send_message(chat_id=update.message.chat_id, text='Oh Great! How may I helpy you?') 
+        bot.send_message(chat_id=update.message.chat_id, text='Oh Great! How may I help you?') 
     elif 'no!' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Okay, jeez, no need to be rude!')  
     elif 'rude' in text and 'not' in text: 
@@ -764,8 +757,8 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Oh, Fat is a very mean word!')    
     elif 'stupid' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Oh, Stupid is a very mean word!')  
-    elif 'drink' in text: 
-        bot.send_message(chat_id=update.message.chat_id, text='I do not drink alcohols btw!')  
+    elif 'drink' in text and 'alcohol' in text: 
+        bot.send_message(chat_id=update.message.chat_id, text='I do not drink alcohols!')  
     elif 'research' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='You have done enough research for the day!, go have fun!')
     elif 'nafiul' in text and 'i' in text: 
@@ -774,26 +767,25 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='No problem bro')  
     elif 'tired' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Want some energy drink?')  
-    elif 'hentai' in text: 
-        bot.send_message(chat_id=update.message.chat_id, text='Somebody in the lab likes Japanese hentai Movies a lot!')    
+        
     elif 'indian' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='What is this? there are no indians in the lab currently!')    
     elif 'china' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='ni hao!') 
     elif 'gay' in text: 
-        bot.send_message(chat_id=update.message.chat_id, text='I am gay too!')  
+        bot.send_message(chat_id=update.message.chat_id, text='I am always gay for curry!')  
     elif 'how' in text and 'are' in text and 'you' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='I am doing good? How about you?')
     elif 'nani' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='为什么你困惑？')  
         bot.send_message(chat_id=update.message.chat_id, text=emojize(':wink:', use_aliases=True))
-    elif 'stop' in text: 
+    elif 'stop' in text and 'wango' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='I will stop if you will!')   
     elif 'want' in text and 'you' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='I want to help you!')
-    elif 'job' in text: 
+    elif 'job' in text and 'you' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Everybody should start looking for  a job!')   
-    elif 'back' in text: 
+    elif 'back' in text and 'wango' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Do you want me back in your life?') 
     elif 'date ' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Oh, date, does friday night sounds good for you?')
@@ -840,20 +832,19 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='I am already dead awake, but i can use more coffee!') 
     elif 'meeting' in text:  
         bot.send_message(chat_id=update.message.chat_id, text='We have meeting on 26th September I think!') 
-    elif 'food' in text: 
+    elif 'food' in text and 'want' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='I am always hungry for food! Where do you want to go?')
-    elif 'wife' in text: 
+    elif 'wife' in text and 'you' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='hmm, I am too young to get married, and my digital body will not satisfy anybody!')                
-    elif 'professor' in text: 
-        bot.send_message(chat_id=update.message.chat_id, text='sssh! I am scared!')  
-    elif 'sure' in text: 
+     
+    elif 'sure' in text and 'okay' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Oh! look at mister I am sure about everything!')  
-    elif 'cool!' in text: 
+    elif 'cool' in text and 'you' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Jiango Wango is always cool my friend!') 
     elif 'advisor' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='http://www.grad.uci.edu/academics/graduate%20advisor%20responsibilities/index.html')                 
-    elif 'wtf' in text: 
-        bot.send_message(chat_id=update.message.chat_id, text='WTF=> Where To my Friend!')
+    #elif 'wtf' in text: 
+        #bot.send_message(chat_id=update.message.chat_id, text='WTF=> Where To my Friend!')
     elif 'lunch' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='UTC or Student Center?')                 
         bot.send_message(chat_id=update.message.chat_id, text='If you have car we can go for curry! :)')                 
@@ -871,7 +862,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Donot use such rude language here please!')
     elif 'can' in text and 'anybody' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Well I am not sure if I can help. But, i will give it a try unlike other non responsive people here in the group!')    
-    elif 'hot' in text: 
+    elif 'hot' in text and 'you' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Oh thank you!, I am glad you find me hot, but please keep personal comment to yourself!')    
     elif 'what' in text and 'is' in text and 'this' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Well! I donot know what it is actually!')        
@@ -883,27 +874,27 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Spicy food is the best food, although Haeseung cannot handle it!')       
     elif 'course' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Get more details on courses https://www.reg.uci.edu/perl/WebSoc') 
-    elif 'yea' in text: 
-        bot.send_message(chat_id=update.message.chat_id, text='Heck Yeah!')
-    elif 'hello' in text: 
-        bot.send_message(chat_id=update.message.chat_id, text='Hi Darling, how can i help you?')  
-    elif 'nice' in text: 
-        bot.send_message(chat_id=update.message.chat_id, text='Thank you!')
+    #elif 'yea' in text: 
+        #bot.send_message(chat_id=update.message.chat_id, text='Heck Yeah!')
+    elif 'hello' in text and 'wango' in text: 
+        bot.send_message(chat_id=update.message.chat_id, text='Hi, how can i help you?')  
+    #elif 'nice' in text: 
+        #bot.send_message(chat_id=update.message.chat_id, text='Thank you!')
     elif 'too' in text and 'small' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Is that why she is upset with you! there there!') 
     elif 'too' in text and 'big' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='That is what he or she said! #nogenderbias')     
-    elif 'cold' in text: 
+    elif 'cold' in text and 'it' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='cold cold go away make some way for the sun!')
-    elif 'annoy' in text: 
+    elif 'annoy' in text and 'you' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='sorry, I know i can be annoying sometimes!') 
-    elif 'wow' in text: 
-        bot.send_message(chat_id=update.message.chat_id, text='wow! What did i miss?')   
+    #elif 'wow' in text: 
+       # bot.send_message(chat_id=update.message.chat_id, text='wow! What did i miss?')   
     elif 'japan' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='私の名前はジャンゴ・ワンゴです')  
     elif 'haha' in text or 'lol' in text: 
         bot.send_message(chat_id=update.message.chat_id, text=':)')    
-    elif 'love' in text: 
+    elif 'love' in text and 'you' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='我也爱你') 
         bot.send_message(chat_id=update.message.chat_id, text='من هم تو رو دوست دارم')
         bot.send_message(chat_id=update.message.chat_id, text='나도 사랑해')
