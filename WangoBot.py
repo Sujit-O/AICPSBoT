@@ -192,43 +192,43 @@ def echo(bot, update):
         return  
     if  'sina' in text and 'picture' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I know how handsome sina looks like!')
-        bot.send_photo(chat_id=update.message.chat_id, photo=open('../../sina.jpg', 'rb'))
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('/home/aicps/aicpsBot/sina.jpg', 'rb'))
         return  
     if  'sina' in text and 'look' in text and 'like' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I know how handsome sina looks like!')
-        bot.send_photo(chat_id=update.message.chat_id, photo=open('../../sina.jpg', 'rb'))
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('/home/aicps/aicpsBot/sina.jpg', 'rb'))
         return 
     if  'korosh' in text and 'picture' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I know how amazing korosh looks like!')
-        bot.send_photo(chat_id=update.message.chat_id, photo=open('../../korosh.jpg', 'rb'))
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('/home/aicps/aicpsBot/korosh.jpg', 'rb'))
         return  
     if  'korosh' in text and 'look' in text and 'like' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I know how amazing korosh looks like!')
-        bot.send_photo(chat_id=update.message.chat_id, photo=open('../../korosh.jpg', 'rb'))
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('/home/aicps/aicpsBot/korosh.jpg', 'rb'))
         return 
     if  'prof' in text and 'picture' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I know how our Advisor looks like!')
-        bot.send_photo(chat_id=update.message.chat_id, photo=open('../../professor.jpg', 'rb'))
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('/home/aicps/aicpsBot/professor.jpg', 'rb'))
         return  
     if  'prof' in text and 'look' in text and 'like' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I know how our Advisor looks like!')
-        bot.send_photo(chat_id=update.message.chat_id, photo=open('../../professor.jpg', 'rb'))
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('/home/aicps/aicpsBot/professor.jpg', 'rb'))
         return 
     if  'sujit' in text and 'picture' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I know how sujit looks like!')
-        bot.send_photo(chat_id=update.message.chat_id, photo=open('../../sujit.jpg', 'rb'))
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('/home/aicps/aicpsBot/sujit.jpg', 'rb'))
         return  
     if  'sujit' in text and 'look' in text and 'like' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I know how sujit looks like!')
-        bot.send_photo(chat_id=update.message.chat_id, photo=open('../../sujit.jpg', 'rb'))
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('/home/aicps/aicpsBot/sujit.jpg', 'rb'))
         return
     if  'haeseung' in text and 'picture' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I know how Dr. Lee looks like!')
-        bot.send_photo(chat_id=update.message.chat_id, photo=open('../../haeseung.jpg', 'rb'))
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('/home/aicps/aicpsBot/haeseung.jpg', 'rb'))
         return  
     if  'haeseung' in text and 'look' in text and 'like' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I know how Dr. Lee looks like!')
-        bot.send_photo(chat_id=update.message.chat_id, photo=open('../../haeseung.jpg', 'rb'))
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('/home/aicps/aicpsBot/haeseung.jpg', 'rb'))
         return  
     if  'professor' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I think around september 26th!')
@@ -368,11 +368,11 @@ def echo(bot, update):
     
     if  'how' in text and 'look' in text and 'like' in text:
         bot.send_message(chat_id=update.message.chat_id, text='My physical representation looks like this!')
-        bot.send_photo(chat_id=update.message.chat_id, photo=open('../../jiang.jpg', 'rb'))
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('/home/aicps/aicpsBot/jiang.jpg', 'rb'))
         return  
     if  'image' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Although I am digital Twin of Jiang, one day I hope to have his body and image!')
-        bot.send_photo(chat_id=update.message.chat_id, photo=open('../../jiang.jpg', 'rb'))
+        bot.send_photo(chat_id=update.message.chat_id, photo=open('/home/aicps/aicpsBot/jiang.jpg', 'rb'))
         return  
     if  'who' in text and 'created' in text and 'you' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Jiang Wan is my creator, because i am striving to be his mirror image!')
