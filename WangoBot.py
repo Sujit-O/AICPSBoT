@@ -50,7 +50,7 @@ def escape_markdown(text):
 def echo(bot, update):
     text=update.message.text
     timenow=localtime()
-    
+    global checkflag
     
     if checkflag==False:
       lastH=timenow.tm_hour
