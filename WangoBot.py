@@ -53,6 +53,9 @@ def echo(bot, update):
     if  'professor' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='He is already back! Stop asking when he will be back and start working on your next paper!')
         return
+    if  'colloquium' in text or 'seminar' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Can you believe it, we have to take 5 seminars starting this quarter!')
+        return  
     if  'play' in text and 'song' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I am not able to play song yet. But if you insists..la la la, oh la la la..:)')
         return  
