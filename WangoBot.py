@@ -85,7 +85,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='4th Seminar: November 17, 2017- Prof. Ashu Sabharwal – Rice University')
         bot.send_message(chat_id=update.message.chat_id, text='5th Seminar: December 1, 2017 - TBD')
         return 
-    if  'seminar' in text or 'date' in text:
+    if  'seminar' in text and 'date' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Here are the Colloquium dates')
         bot.send_message(chat_id=update.message.chat_id, text='1st seminar: October 6, 2017-  Prof. Morely Mao - University of Michigan')
         bot.send_message(chat_id=update.message.chat_id, text='2nd seminar: October 20, 2017- TBD')
@@ -93,7 +93,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='4th Seminar: November 17, 2017- Prof. Ashu Sabharwal – Rice University')
         bot.send_message(chat_id=update.message.chat_id, text='5th Seminar: December 1, 2017 - TBD')
         return   
-    if  'colloquium' in text or 'seminar' in text:
+    if  'colloquium' in text and 'seminar' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Can you believe it, we have to take 5 seminars starting this quarter!')
         return  
     if  'play' in text and 'song' in text:
