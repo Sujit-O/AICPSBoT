@@ -47,6 +47,28 @@ def escape_markdown(text):
 
 def echo(bot, update):
     text=update.message.text
+    timenow=localtime()
+    checkflag==False
+    
+    if checkflag==False:
+      lastH=timenow.tm_hour
+      if (timenow.tm_mon==10 ) and (timenow.tm_mday==5 or timenow.tm_mday==19 ):
+        checkflag=True
+        bot.send_message(chat_id=update.message.chat_id, text='BTW, We have Colloquium tomorrow at 9 am, Donot forget!!')
+
+      if (timenow.tm_mon==11) and ( timenow.tm_mday==2 or timenow.tm_mday==16 or timenow.tm_mday==30 ):
+        checkflag=True
+        bot.send_message(chat_id=update.message.chat_id, text='BTW, We have Colloquium tomorrow at 9 am, Donot forget!!')
+
+      if (timenow.tm_mon==10  or timenow.tm_mon==11 or timenow.tm_mon==12) and (timenow.tm_mday==5 or timenow.tm_mday==19 or timenow.tm_mday==2 or timenow.tm_mday==16 or timenow.tm_mday==30 ):
+        checkflag=True
+        bot.send_message(chat_id=update.message.chat_id, text='BTW, We have Colloquium tomorrow at 9 am, Donot forget!!')   
+   
+    if checkflag==True:
+      if (lastH-timenow.tm_hour)>0:
+        checkflag==False
+    
+        
     text=str.lower(text)
     #bot.send_chat_action(chat_id=update.message.chat_id, action=telegram.ChatAction.TYPING)
 #    bot.send_message(chat_id=update.message.chat_id, text="I'm a bot, please talk to me!")
