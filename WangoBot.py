@@ -21,7 +21,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
                     level=logging.INFO)
 
 logger = logging.getLogger(__name__)
- 
+checkflag==False 
  
 # Define a few command handlers. These usually take the two arguments bot and
 # update. Error handlers also receive the raised TelegramError object in error.
@@ -48,7 +48,7 @@ def escape_markdown(text):
 def echo(bot, update):
     text=update.message.text
     timenow=localtime()
-    checkflag==False
+    
     
     if checkflag==False:
       lastH=timenow.tm_hour
