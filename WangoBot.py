@@ -21,12 +21,13 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
                     level=logging.INFO)
 
 logger = logging.getLogger(__name__)
-checkflag==False 
+ 
  
 # Define a few command handlers. These usually take the two arguments bot and
 # update. Error handlers also receive the raised TelegramError object in error.
 
-       
+checkflag==False
+
 def start(bot, update):
     update.message.reply_text('Hi!')
     update.message.reply_text('I am Jiango Wango, your friendly Colleague. What is your name?')
