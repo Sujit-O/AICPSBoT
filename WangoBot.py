@@ -731,7 +731,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Hmm, Can I have your Car, since you will not need it anymore')             
     elif 'hmm' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='What are you thinking about?') 
-    elif 'paper' in text: 
+    elif 'paper' in text and 'finish' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='ughh! Common you already have lots of papers! Relax. HAve Fun!')    
     elif 'vacation' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Go to Vegas! Yay Baby!!') 
@@ -751,7 +751,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Okay, jeez, no need to be rude!')  
     elif 'rude' in text and 'not' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Yes you were rude!')  
-    elif 'favorite' in text: 
+    elif 'favorite' in text and 'food' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Curry all the way baby! Hell Yay!!')
     elif 'fat' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Oh, Fat is a very mean word!')    
@@ -759,7 +759,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Oh, Stupid is a very mean word!')  
     elif 'drink' in text and 'alcohol' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='I do not drink alcohols!')  
-    elif 'research' in text: 
+    elif 'research' in text and 'i' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='You have done enough research for the day!, go have fun!')
     elif 'nafiul' in text and 'i' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Your seat is empty here in the lab Nafiul')
@@ -787,7 +787,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Everybody should start looking for  a job!')   
     elif 'back' in text and 'wango' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Do you want me back in your life?') 
-    elif 'date ' in text: 
+    elif 'date' in text and 'go' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Oh, date, does friday night sounds good for you?')
     elif 'north' in text and  'korea' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Did you mention north Korea! We are doomed!') 
@@ -825,13 +825,13 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='I do not think he has life! lol') 
     elif 'conference' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Upcoming conference:')                           
-        bot.send_message(chat_id=update.message.chat_id, text='DATE2017: Deadline Paper Submission: 10 September, 2017 ')                           
+        #bot.send_message(chat_id=update.message.chat_id, text='DATE2017: Deadline Paper Submission: 10 September, 2017 ')                           
         bot.send_message(chat_id=update.message.chat_id, text='CPSWeek2017: Deadline Paper Submission:  October 6, 2017 ') 
         bot.send_message(chat_id=update.message.chat_id, text='DAC2017: Deadline Paper Submission:  November 14, 2017 ') 
     elif 'coffee' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='I am already dead awake, but i can use more coffee!') 
     elif 'meeting' in text:  
-        bot.send_message(chat_id=update.message.chat_id, text='We have meeting on 26th September I think!') 
+        bot.send_message(chat_id=update.message.chat_id, text='We have meeting Every Friday and Monday this Quarter') 
     elif 'food' in text and 'want' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='I am always hungry for food! Where do you want to go?')
     elif 'wife' in text and 'you' in text: 
@@ -841,7 +841,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Oh! look at mister I am sure about everything!')  
     elif 'cool' in text and 'you' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Jiango Wango is always cool my friend!') 
-    elif 'advisor' in text: 
+    elif 'advisor' in text and 'resp' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='http://www.grad.uci.edu/academics/graduate%20advisor%20responsibilities/index.html')                 
     #elif 'wtf' in text: 
         #bot.send_message(chat_id=update.message.chat_id, text='WTF=> Where To my Friend!')
@@ -870,9 +870,9 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='find more details here http://engineering.uci.edu/dept/eecs/graduate/roadmap_phd/prelim_cpe1')            
     elif 'pick' in text and 'me' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='I would but i donot have car! sorry') 
-    elif 'spicy' in text: 
+    elif 'spicy' in text and 'like' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Spicy food is the best food, although Haeseung cannot handle it!')       
-    elif 'course' in text: 
+    elif 'course' in text and 'quarter' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Get more details on courses https://www.reg.uci.edu/perl/WebSoc') 
     #elif 'yea' in text: 
         #bot.send_message(chat_id=update.message.chat_id, text='Heck Yeah!')
