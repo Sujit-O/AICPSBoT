@@ -28,6 +28,7 @@ logger = logging.getLogger(__name__)
 
 
 checkflag=False
+checkflag2=False
 
 def start(bot, update):
     update.message.reply_text('Hi!')
@@ -51,6 +52,7 @@ def echo(bot, update):
     text=update.message.text
     timenow=localtime()
     global checkflag
+    global checkflag2
     
     if checkflag==False:
       lastH=timenow.tm_hour
@@ -62,14 +64,29 @@ def echo(bot, update):
         checkflag=True
         bot.send_message(chat_id=update.message.chat_id, text='BTW, We have Colloquium tomorrow at 9 am, Donot forget!!')
 
-      if (timenow.tm_mon==10  or timenow.tm_mon==11 or timenow.tm_mon==12) and (timenow.tm_mday==5 or timenow.tm_mday==19 or timenow.tm_mday==2 or timenow.tm_mday==16 or timenow.tm_mday==30 ):
-        checkflag=True
-        bot.send_message(chat_id=update.message.chat_id, text='BTW, We have Colloquium tomorrow at 9 am, Donot forget!!')   
+        
    
     if checkflag==True:
       if (lastH-timenow.tm_hour)>0:
         checkflag=False
-    
+        
+    if checkflag2==False:
+      lastH=timenow.tm_hour
+      if (timenow.tm_mon==10 ) and (timenow.tm_mday==8 or timenow.tm_mday==22 ):
+        checkflag2=True
+        bot.send_message(chat_id=update.message.chat_id, text='The colloquim exam deadline is tomorrow. Do not forget to take it!')
+
+      if (timenow.tm_mon==11) and ( timenow.tm_mday==2 or timenow.tm_mday==19 ):
+        checkflag2=True
+        bot.send_message(chat_id=update.message.chat_id, text='The colloquim exam deadline is tomorrow. Do not forget to take it!')
+
+      if ( timenow.tm_mon==12) and (timenow.tm_mday==3):
+        checkflag2=True
+        bot.send_message(chat_id=update.message.chat_id, text='The colloquim exam deadline is tomorrow. Do not forget to take it!')   
+   
+    if checkflag2==True:
+      if (lastH-timenow.tm_hour)>0:
+        checkflag2=False
         
     text=str.lower(text)
     #bot.send_chat_action(chat_id=update.message.chat_id, action=telegram.ChatAction.TYPING)
@@ -93,7 +110,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='4th Seminar: November 17, 2017- Prof. Ashu Sabharwal – Rice University')
         bot.send_message(chat_id=update.message.chat_id, text='5th Seminar: December 1, 2017 - TBD')
         return   
-    if  'colloquium' in text and 'seminar' in text:
+    if  'colloquium' in text or 'seminar' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Can you believe it, we have to take 5 seminars starting this quarter!')
         return  
     if  'play' in text and 'song' in text:
