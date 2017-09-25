@@ -850,7 +850,7 @@ def echo(bot, update):
     elif 'date' in text and 'go' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='Oh, date, does friday night sounds good for you?')
     elif 'north' in text and  'korea' in text: 
-        bot.send_message(chat_id=update.message.chat_id, text='Did you mention north Korea! We are doomed!') 
+        bot.send_message(chat_id=update.message.chat_id, text='Did you mention north Korea! We are doomed! I think I will ask Professor to shift my server to east coast! Maybe Siemens in Princeton. Time to talk to Dr. Arqui.') 
     elif 'trump' in text: 
         bot.send_message(chat_id=update.message.chat_id, text='All hail our president the great! ssh! they are listening, go along!')    
     elif 'lab' in text and 'who' in text: 
