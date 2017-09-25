@@ -26,7 +26,7 @@ logger = logging.getLogger(__name__)
 # Define a few command handlers. These usually take the two arguments bot and
 # update. Error handlers also receive the raised TelegramError object in error.
 
-checkflag==False
+checkflag=False
 
 def start(bot, update):
     update.message.reply_text('Hi!')
@@ -67,7 +67,7 @@ def echo(bot, update):
    
     if checkflag==True:
       if (lastH-timenow.tm_hour)>0:
-        checkflag==False
+        checkflag=False
     
         
     text=str.lower(text)
