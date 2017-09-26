@@ -94,6 +94,15 @@ def echo(bot, update):
     if  'professor' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='He is already back! Stop asking when he will be back and start working on your next paper!')
         return
+    if  'free' in text and 'food' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Here are the free food dates and events.')
+        bot.send_message(chat_id=update.message.chat_id, text='Free Bagel: September 28, Place: AGS Office 8-11 am')
+        #bot.send_message(chat_id=update.message.chat_id, text='2nd seminar: October 20, 2017- TBD')
+        #bot.send_message(chat_id=update.message.chat_id, text='3rd Seminar: November 3, 2017- Prof. Viktor Prasanna -  USC')
+        #bot.send_message(chat_id=update.message.chat_id, text='4th Seminar: November 17, 2017- Prof. Ashu Sabharwal – Rice University')
+        #bot.send_message(chat_id=update.message.chat_id, text='5th Seminar: December 1, 2017 - TBD')
+        return
+
     if  'colloquium' in text and 'date' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Here are the Colloquium dates')
         bot.send_message(chat_id=update.message.chat_id, text='1st seminar: October 6, 2017-  Prof. Morely Mao - University of Michigan')
@@ -102,6 +111,14 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='4th Seminar: November 17, 2017- Prof. Ashu Sabharwal – Rice University')
         bot.send_message(chat_id=update.message.chat_id, text='5th Seminar: December 1, 2017 - TBD')
         return 
+    if  'event' in text:
+        bot.send_message(chat_id=update.message.chat_id, text='Here are some exciting events')
+        bot.send_message(chat_id=update.message.chat_id, text='Welcome Week Party: Septmeber 30th, 7-10:30 pm.')
+        #bot.send_message(chat_id=update.message.chat_id, text='2nd seminar: October 20, 2017- TBD')
+        #bot.send_message(chat_id=update.message.chat_id, text='3rd Seminar: November 3, 2017- Prof. Viktor Prasanna -  USC')
+        #bot.send_message(chat_id=update.message.chat_id, text='4th Seminar: November 17, 2017- Prof. Ashu Sabharwal – Rice University')
+        #bot.send_message(chat_id=update.message.chat_id, text='5th Seminar: December 1, 2017 - TBD')
+        return    
     if  'seminar' in text and 'date' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Here are the Colloquium dates')
         bot.send_message(chat_id=update.message.chat_id, text='1st seminar: October 6, 2017-  Prof. Morely Mao - University of Michigan')
