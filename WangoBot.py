@@ -29,6 +29,8 @@ logger = logging.getLogger(__name__)
 
 checkflag=False
 checkflag2=False
+checkflagK=False
+
 
 def start(bot, update):
     update.message.reply_text('Hi!')
@@ -69,10 +71,22 @@ def echo(bot, update):
     if checkflag==True:
       if (lastH-timenow.tm_hour)>0:
         checkflag=False
+    
+    if checkflagK==False:
+      lastH=timenow.tm_hour
+      if (timenow.tm_mon==9 ) and (timenow.tm_mday==5 or timenow.tm_mday==19 ):
+        checkflag=True
+        bot.send_message(chat_id=update.message.chat_id, text='@Korosh There is welcome Party Tomorrow')
+
+        
+   
+    if checkflagK==True:
+      if (lastH-timenow.tm_hour)>2:
+        checkflag=False
         
     if checkflag2==False:
       lastH=timenow.tm_hour
-      if (timenow.tm_mon==10 ) and (timenow.tm_mday==8 or timenow.tm_mday==22 ):
+      if (timenow.tm_mon==10 ) and (timenow.tm_mday==29):
         checkflag2=True
         bot.send_message(chat_id=update.message.chat_id, text='The colloquim exam deadline is tomorrow. Do not forget to take it!')
 
