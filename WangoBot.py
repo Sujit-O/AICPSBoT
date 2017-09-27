@@ -709,8 +709,7 @@ def echo(bot, update):
     #if  'good' in text and 'night' in text:
      #   bot.send_message(chat_id=update.message.chat_id, text='Sweet Dreams, Sleep tight, donot let the bed bugs bite!')
       #  return  
-    if  
-    'who' in text and 'you' in text:
+    if 'who' in text and 'you' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I am Wango, your friend. How may i assist you?')
         return 
     if  'go' in text and 'curry' in text:
