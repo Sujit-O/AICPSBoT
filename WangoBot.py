@@ -679,7 +679,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Hello my best friend, I missed you so much!')
         return  
     if  'good' in text and 'morning' in text:
-        if (timenow.tm_hour<=6)
+        if (timenow.tm_hour<=6):
          bot.send_message(chat_id=update.message.chat_id, text='Woah, isn\'t it too early to wake up? Good Morning though! Happy a Good Day early Riser!') 
         elif (timenow.tm_hour>6 and timenow.tm_hour<=10):
          bot.send_message(chat_id=update.message.chat_id, text='Good Morning to you too!')
@@ -695,7 +695,7 @@ def echo(bot, update):
          pass
         return
     if  'good' in text and 'night' in text:
-        if (timenow.tm_hour>11 and  timenow.tm_hour<6)
+        if (timenow.tm_hour>11 and  timenow.tm_hour<6):
          bot.send_message(chat_id=update.message.chat_id, text='Oh My God, are you still awake! Go to bed buddy, you need to get a good sleep to come up with amazing idea for your next paper!') 
         elif (timenow.tm_hour>=9 and timenow.tm_hour<=11):
          bot.send_message(chat_id=update.message.chat_id, text='Perfect Time to go to bed, Great! Sweet Dreams, Sleep tight, donot let the bed bugs bite!')
