@@ -695,12 +695,12 @@ def echo(bot, update):
          pass
         return
     if  'good' in text and 'night' in text:
-        if (timenow.tm_hour>11 and  timenow.tm_hour<6):
+        if (timenow.tm_hour>23 and  timenow.tm_hour<6):
          bot.send_message(chat_id=update.message.chat_id, text='Oh My God, are you still awake! Go to bed buddy, you need to get a good sleep to come up with amazing idea for your next paper!') 
-        elif (timenow.tm_hour>=9 and timenow.tm_hour<=11):
+        elif (timenow.tm_hour>=21 and timenow.tm_hour<=23):
          bot.send_message(chat_id=update.message.chat_id, text='Perfect Time to go to bed, Great! Sweet Dreams, Sleep tight, donot let the bed bugs bite!')
          
-        elif (timenow.tm_hour<9):
+        elif (timenow.tm_hour<21):
          bot.send_message(chat_id=update.message.chat_id, text='Hey Buddy, it is too early to go to bed! Work on the paper for a while. ') 
         else:
          pass
