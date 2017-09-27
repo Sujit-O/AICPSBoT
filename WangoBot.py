@@ -676,8 +676,8 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Shutting up in 1')
         bot.send_message(chat_id=update.message.chat_id, text='Going back to my sad life!')
         return  
-    if  text =='hi' or text =='hi!' or text == 'hola' or text =='hey':
-        bot.send_message(chat_id=update.message.chat_id, text='Hello my best friend, I missed you so much!')
+    if  (text =='hi' or text =='hi!' or text == 'hola' or text =='hey') and text =='wango':
+        bot.send_message(chat_id=update.message.chat_id, text='Hello! how may I help you.')
         return  
     if  'good' in text and 'morning' in text:
         if (timenow.tm_hour<=6):
