@@ -34,8 +34,7 @@ convoFlag=[];
 convoName=[];
 
 def start(bot, update):
-    update.message.reply_text('Hi!')
-    update.message.reply_text('I am Jiango Wango, your friendly Colleague. What is your name?')
+    update.message.reply_text('Hi! I am Jiango Wango, your friendly Colleague. What is your name?')
 
 
 def help(bot, update):
@@ -56,6 +55,8 @@ def echo(bot, update):
     timenow=localtime()
     global checkflag
     global checkflag2
+    global convoFlag
+    global convoName
     
     if checkflag==False:
       lastH=timenow.tm_hour
