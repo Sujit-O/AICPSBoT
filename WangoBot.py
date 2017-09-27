@@ -30,7 +30,8 @@ logger = logging.getLogger(__name__)
 checkflag=False
 checkflag2=False
 checkflagK=False
-
+convoFlag=[];
+convoName=[];
 
 def start(bot, update):
     update.message.reply_text('Hi!')
@@ -678,18 +679,38 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Hello my best friend, I missed you so much!')
         return  
     if  'good' in text and 'morning' in text:
-        bot.send_message(chat_id=update.message.chat_id, text='Good Morning to you too!')
-        baseurl = "https://query.yahooapis.com/v1/public/yql?"
-        yql_query = "select item.condition from weather.forecast where woeid=2427665"
-        yql_url = baseurl + urllib.parse.urlencode({'q':yql_query}) + "&format=json"
-        result = urllib.request.urlopen(yql_url).read()
-        data = json.loads(result)
-        bot.send_message(chat_id=update.message.chat_id, text= 'Temp in irvine right now is '+data['query']['results']['channel']['item']['condition']['temp']+' F and weather is '+data['query']['results']['channel']['item']['condition']['text']+'. Hope you will have an amazing day! Dewa gokigen yō')
+        if (timenow.tm_hour<=6)
+         bot.send_message(chat_id=update.message.chat_id, text='Woah, isn\'t it too early to wake up? Good Morning though! Happy a Good Day early Riser!') 
+        elif (timenow.tm_hour>6 and timenow.tm_hour<=10):
+         bot.send_message(chat_id=update.message.chat_id, text='Good Morning to you too!')
+         baseurl = "https://query.yahooapis.com/v1/public/yql?"
+         yql_query = "select item.condition from weather.forecast where woeid=2427665"
+         yql_url = baseurl + urllib.parse.urlencode({'q':yql_query}) + "&format=json"
+         result = urllib.request.urlopen(yql_url).read()
+         data = json.loads(result)
+         bot.send_message(chat_id=update.message.chat_id, text= 'Temp in irvine right now is '+data['query']['results']['channel']['item']['condition']['temp']+' F and weather is '+data['query']['results']['channel']['item']['condition']['text']+'. Hope you will have an amazing day! Dewa gokigen yō')
+        elif (timenow.tm_hour>6 and timenow.tm_hour>10):
+         bot.send_message(chat_id=update.message.chat_id, text='Hmm, isn\'t it little late for wishing Good Morning!, Need to work on your sleeping habits!') 
+        else:
+         pass
         return
     if  'good' in text and 'night' in text:
-        bot.send_message(chat_id=update.message.chat_id, text='Sweet Dreams, Sleep tight, donot let the bed bugs bite!')
-        return  
-    if  'who' in text and 'you' in text:
+        if (timenow.tm_hour>11 and  timenow.tm_hour<6)
+         bot.send_message(chat_id=update.message.chat_id, text='Oh My God, are you still awake! Go to bed buddy, you need to get a good sleep to come up with amazing idea for your next paper!') 
+        elif (timenow.tm_hour>=9 and timenow.tm_hour<=11):
+         bot.send_message(chat_id=update.message.chat_id, text='Perfect Time to go to bed, Great! Sweet Dreams, Sleep tight, donot let the bed bugs bite!')
+         
+        elif (timenow.tm_hour<9):
+         bot.send_message(chat_id=update.message.chat_id, text='Hey Buddy, it is too early to go to bed! Work on the paper for a while. ') 
+        else:
+         pass
+        return
+       
+    #if  'good' in text and 'night' in text:
+     #   bot.send_message(chat_id=update.message.chat_id, text='Sweet Dreams, Sleep tight, donot let the bed bugs bite!')
+      #  return  
+    if  
+    'who' in text and 'you' in text:
         bot.send_message(chat_id=update.message.chat_id, text='I am Wango, your friend. How may i assist you?')
         return 
     if  'go' in text and 'curry' in text:
