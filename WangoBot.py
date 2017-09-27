@@ -676,7 +676,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Shutting up in 1')
         bot.send_message(chat_id=update.message.chat_id, text='Going back to my sad life!')
         return  
-    if  (text =='hi' or text =='hi!' or text == 'hola' or text =='hey') and text =='wango':
+    if  ('hi' in text or 'hi!' in text or 'hola' in text or 'hey' in text) and 'wango' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Hello! how may I help you.')
         return  
     if  'good' in text and 'morning' in text:
@@ -690,7 +690,7 @@ def echo(bot, update):
          result = urllib.request.urlopen(yql_url).read()
          data = json.loads(result)
          bot.send_message(chat_id=update.message.chat_id, text= 'Temp in irvine right now is '+data['query']['results']['channel']['item']['condition']['temp']+' F and weather is '+data['query']['results']['channel']['item']['condition']['text']+'. Hope you will have an amazing day! Dewa gokigen yō')
-        elif (timenow.tm_hour>6 and timenow.tm_hour>10):
+        elif (timenow.tm_hour>10):
          bot.send_message(chat_id=update.message.chat_id, text='Hmm, isn\'t it little late for wishing Good Morning!, Need to work on your sleeping habits!') 
         else:
          pass
