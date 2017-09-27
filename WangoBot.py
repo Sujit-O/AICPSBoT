@@ -103,8 +103,7 @@ def echo(bot, update):
         checkflag2=False
         
     text=str.lower(text)
-    #bot.send_chat_action(chat_id=update.message.chat_id, action=telegram.ChatAction.TYPING)
-#    bot.send_message(chat_id=update.message.chat_id, text="I'm a bot, please talk to me!")
+    
     if  'professor' in text and 'back' in text:
         bot.send_message(chat_id=update.message.chat_id, text='He is already back! Stop asking when he will be back and start working on your next paper!')
         return
@@ -112,9 +111,6 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Here are the free food dates and events.')
         bot.send_message(chat_id=update.message.chat_id, text='Free Bagel: September 28, Place: AGS Office 8-11 am')
         bot.send_message(chat_id=update.message.chat_id, text='Fall BBQ, October 14, Palo Verde Clubhouse, 5.30 pm')
-        #bot.send_message(chat_id=update.message.chat_id, text='3rd Seminar: November 3, 2017- Prof. Viktor Prasanna -  USC')
-        #bot.send_message(chat_id=update.message.chat_id, text='4th Seminar: November 17, 2017- Prof. Ashu Sabharwal – Rice University')
-        #bot.send_message(chat_id=update.message.chat_id, text='5th Seminar: December 1, 2017 - TBD')
         return
 
     if  'colloquium' in text and 'date' in text:
@@ -128,11 +124,8 @@ def echo(bot, update):
     if  'event' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Here are some exciting events')
         bot.send_message(chat_id=update.message.chat_id, text='Welcome Week Party: Septmeber 30th, 7-10:30 pm.')
-        #bot.send_message(chat_id=update.message.chat_id, text='2nd seminar: October 20, 2017- TBD')
-        #bot.send_message(chat_id=update.message.chat_id, text='3rd Seminar: November 3, 2017- Prof. Viktor Prasanna -  USC')
-        #bot.send_message(chat_id=update.message.chat_id, text='4th Seminar: November 17, 2017- Prof. Ashu Sabharwal – Rice University')
-        #bot.send_message(chat_id=update.message.chat_id, text='5th Seminar: December 1, 2017 - TBD')
-        return    
+        return
+       
     if  'seminar' in text and 'date' in text:
         bot.send_message(chat_id=update.message.chat_id, text='Here are the Colloquium dates')
         bot.send_message(chat_id=update.message.chat_id, text='1st seminar: October 6, 2017-  Prof. Morely Mao - University of Michigan')
@@ -184,7 +177,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text= 'I am named after the person who I aspire to be!')
         return 
       
-    if  'naked' in text:
+    if  'naked' in text and 'you' in text:
         bot.send_message(chat_id=update.message.chat_id, text= 'hmm, I will pretend I did not read this!')
         
         return
