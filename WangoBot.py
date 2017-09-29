@@ -33,6 +33,9 @@ checkflagK=False
 convoFlag=[];
 convoName=[];
 ktoggle=True;
+lastH1 = localtime().tm_hour
+lastH2 = localtime().tm_hour
+lastHK = localtime().tm_hour
 def start(bot, update):
     update.message.reply_text('Hi! I am Jiango Wango, your friendly Colleague. What is your name?')
 
@@ -58,9 +61,13 @@ def echo(bot, update):
     global convoFlag
     global convoName
     global ktoggle
+    global lastH1
+    global lastH2
+    global lastHK
+    
     
     if checkflag==False:
-      lastH=timenow.tm_hour
+      lastH1=timenow.tm_hour
       if (timenow.tm_mon==10 ) and (timenow.tm_mday==5 or timenow.tm_mday==19 ):
         checkflag=True
         bot.send_message(chat_id=update.message.chat_id, text='BTW, We have Colloquium tomorrow at 9 am, Donot forget!!')
@@ -72,26 +79,26 @@ def echo(bot, update):
         
    
     if checkflag==True:
-      if (lastH-timenow.tm_hour)>0:
+      if (lastH1-timenow.tm_hour)>0:
         checkflag=False
     
     if checkflagK==False:
-      lastH=timenow.tm_hour
+      lastHK=timenow.tm_hour
       if (timenow.tm_mon==9 ) and (timenow.tm_mday==29 ):
         checkflag=True
         if ktoggle:
-          bot.send_message(chat_id=update.message.chat_id, text='@Korosh There is welcome Party Tomorrow, We should go. ')
+          bot.send_message(chat_id=update.message.chat_id, text='There is welcome Party Tomorrow, We should go. ')
         else:
-          bot.send_message(chat_id=update.message.chat_id, text='@Korosh Party Tomorrow, Praty Tomorrow, Yayy! ')
+          bot.send_message(chat_id=update.message.chat_id, text='Party Tomorrow, Party Tomorrow, Yayy! ')
         ktoggle= not(ktoggle) 
         
    
     if checkflagK==True:
-      if (lastH-timenow.tm_hour)>1:
+      if (lastHK-timenow.tm_hour)>2:
         checkflag=False
         
     if checkflag2==False:
-      lastH=timenow.tm_hour
+      lastH2=timenow.tm_hour
       if (timenow.tm_mon==10 ) and (timenow.tm_mday==29):
         checkflag2=True
         bot.send_message(chat_id=update.message.chat_id, text='The colloquim exam deadline is tomorrow. Do not forget to take it!')
@@ -105,7 +112,7 @@ def echo(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='The colloquim exam deadline is tomorrow. Do not forget to take it!')   
    
     if checkflag2==True:
-      if (lastH-timenow.tm_hour)>0:
+      if (lastH2-timenow.tm_hour)>0:
         checkflag2=False
         
     text=str.lower(text)
