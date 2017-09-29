@@ -82,20 +82,20 @@ def echo(bot, update):
       if (lastH1-timenow.tm_hour)>0:
         checkflag=False
     
-    if checkflagK==False:
-      lastHK=timenow.tm_hour
-      if (timenow.tm_mon==9 ) and (timenow.tm_mday==29 ):
-        checkflag=True
-        if ktoggle:
-          bot.send_message(chat_id=update.message.chat_id, text='There is welcome Party Tomorrow, We should go. ')
-        else:
-          bot.send_message(chat_id=update.message.chat_id, text='Party Tomorrow, Party Tomorrow, Yayy! ')
-        ktoggle= not(ktoggle) 
+    #if checkflagK==False:
+      #lastHK=timenow.tm_hour
+      #if (timenow.tm_mon==9 ) and (timenow.tm_mday==29 ):
+       # checkflag=True
+       # if ktoggle:
+        #  bot.send_message(chat_id=update.message.chat_id, text='There is welcome Party Tomorrow, We should go. ')
+       # else:
+        #  bot.send_message(chat_id=update.message.chat_id, text='Party Tomorrow, Party Tomorrow, Yayy! ')
+        #ktoggle= not(ktoggle) 
         
    
-    if checkflagK==True:
-      if (lastHK-timenow.tm_hour)>2:
-        checkflag=False
+    #if checkflagK==True:
+     ## if (lastHK-timenow.tm_hour)>2:
+      #  checkflag=False
         
     if checkflag2==False:
       lastH2=timenow.tm_hour
