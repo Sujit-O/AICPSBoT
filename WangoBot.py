@@ -32,7 +32,7 @@ checkflag2=False
 checkflagK=False
 convoFlag=[];
 convoName=[];
-
+ktoggle=True;
 def start(bot, update):
     update.message.reply_text('Hi! I am Jiango Wango, your friendly Colleague. What is your name?')
 
@@ -57,6 +57,7 @@ def echo(bot, update):
     global checkflag2
     global convoFlag
     global convoName
+    global ktoggle
     
     if checkflag==False:
       lastH=timenow.tm_hour
@@ -76,14 +77,17 @@ def echo(bot, update):
     
     if checkflagK==False:
       lastH=timenow.tm_hour
-      if (timenow.tm_mon==9 ) and (timenow.tm_mday==5 or timenow.tm_mday==19 ):
+      if (timenow.tm_mon==9 ) and (timenow.tm_mday==29 ):
         checkflag=True
-        bot.send_message(chat_id=update.message.chat_id, text='@Korosh There is welcome Party Tomorrow')
-
+        if ktoggle:
+          bot.send_message(chat_id=update.message.chat_id, text='@Korosh There is welcome Party Tomorrow, We should go. ')
+        else:
+          bot.send_message(chat_id=update.message.chat_id, text='@Korosh Party Tomorrow, Praty Tomorrow, Yayy! ')
+        ktoggle= not(ktoggle) 
         
    
     if checkflagK==True:
-      if (lastH-timenow.tm_hour)>2:
+      if (lastH-timenow.tm_hour)>1:
         checkflag=False
         
     if checkflag2==False:
