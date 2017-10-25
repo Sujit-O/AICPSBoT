@@ -1028,8 +1028,8 @@ def error(bot, update, error):
 
 def wangomain():
     # Create the EventHandler and pass it your bot's token.
-    updater = Updater("393007383:AAEtMdzXRtKNbpDfoUZ8qC2u4jjEwyUNmzc")
-#    updater = Updater("397724839:AAHA3hv9ViauAh_beIysnJcvDDHlV5wn1sY")
+    updater = Updater("")
+
     
     # Get the dispatcher to register handlers
     dp = updater.dispatcher
